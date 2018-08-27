@@ -1,0 +1,20 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+
+	<ActionBar title="Home" class="action-bar">
+	</ActionBar>
+	<ScrollView>
+		<StackLayout class="home-panel">
+		
+			<!-- Home Page-->
+
+			<Image src="https://i.imgur.com/vAqEho5.png" />
+			<Label text=" " />
+			<Button text="Login" tap="{{ onButtonTap }}" class="button_home" />
+			<Label text="  " />
+			<Button text="Register" tap="{{ onButtonTap }}" class="button_home" />
+			<Label text=" " />
+			<Button text="About Us" tap="{{ onButtonTap }}" id="button_about" />
+		</StackLayout>
+
+	</ScrollView>
+</Page>

@@ -44,10 +44,10 @@ var HtmlView = (function (_super) {
         return "";
     };
     HtmlView.prototype[html_view_common_1.htmlProperty.setNative] = function (value) {
+        var _a;
         var htmlString = NSString.stringWithString(value + "");
         var nsData = htmlString.dataUsingEncoding(NSUnicodeStringEncoding);
         this.nativeViewProtected.attributedText = NSAttributedString.alloc().initWithDataOptionsDocumentAttributesError(nsData, (_a = {}, _a[NSDocumentTypeDocumentAttribute] = NSHTMLTextDocumentType, _a), null);
-        var _a;
     };
     return HtmlView;
 }(html_view_common_1.HtmlViewBase));
