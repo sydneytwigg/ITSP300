@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "eslint": "~4.9.0",
+    "kinvey-nativescript-sdk": "3.11.6",
     "nativescript-dev-sass": "~1.6.0",
     "nativescript-dev-webpack": "~0.15.0"
   },
