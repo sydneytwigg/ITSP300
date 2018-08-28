@@ -8,13 +8,6 @@ function onNavigatingTo(args) {
     page.bindingContext = new LoginPageViewModel();
 }
 
-function onLoginWithSocialProviderButtonTap() {
-    /* ***********************************************************
-    * For log in with social provider you can add your custom logic or
-    * use NativeScript plugin for log in with Facebook
-    * http://market.nativescript.org/plugins/nativescript-facebook
-    *************************************************************/
-}
 
 function onSigninButtonTap(args) {
     const button = args.object;
@@ -30,6 +23,6 @@ function onForgotPasswordTap() {
 }
 
 exports.onNavigatingTo = onNavigatingTo;
-exports.onLoginWithSocialProviderButtonTap = onLoginWithSocialProviderButtonTap;
+
 exports.onSigninButtonTap = onSigninButtonTap;
 exports.onForgotPasswordTap = onForgotPasswordTap;
