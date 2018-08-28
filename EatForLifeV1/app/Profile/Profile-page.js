@@ -34,6 +34,12 @@ function pageLoaded(args) {
   page.bindingContext = profileViewModel;
 }
 
+function bmiButton(args){
+  const button = args.object;
+  const page = button.page;
+  page.frame.navigate("./demo-bmi/demo-bmi-page");
+}
+
 /*
 Exporting a function in a NativeScript code-behind file makes it accessible
 to the file’s corresponding XML file. In this case, exporting the pageLoaded
@@ -41,3 +47,4 @@ function here makes the pageLoaded="pageLoaded" binding in this page’s XML
 file work.
 */
 exports.pageLoaded = pageLoaded;
+exports.bmiButton = bmiButton;

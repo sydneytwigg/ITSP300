@@ -21,7 +21,8 @@
 			<Label text="Name" class="heading" />
 			<TextField text="{{ textName }}" class="input" />
 			<StackLayout orientation="vertical" width="210" height="210" backgroundColor="lightgray">
-				<Button text="Save" tap="{{ saveButton }}" class="button" />
+        <Button text="View BMI" tap="bmiButton" class="button" />
+      	<Button text="Save" tap="{{ saveButton }}" class="button" />
 			</StackLayout>
 
 		</StackLayout>

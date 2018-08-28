@@ -17,6 +17,7 @@
   "dependencies": {
     "nativescript-chatview": "^1.0.3",
     "nativescript-theme-core": "~1.0.4",
+    "nativescript-ui-chart": "^3.8.0",
     "tns-core-modules": "~4.2.0"
   },
   "devDependencies": {
