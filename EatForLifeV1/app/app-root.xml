@@ -14,7 +14,7 @@ http://docs.nativescript.org/cookbook/ui/tab-view
     </TabViewItem>
 
     <TabViewItem title="Profile" ios:iconSource="res://tabIcons/profile_s" android:iconSource="res://profile_s">
-      <Frame defaultPage="profile/profile-page"></Frame>
+      <Frame defaultPage="Profile/Profile-page"></Frame>
     </TabViewItem>
 
     <TabViewItem title="Shopping" ios:iconSource="res://tabIcons/shopping_s" android:iconSource="res://shopping_s">
