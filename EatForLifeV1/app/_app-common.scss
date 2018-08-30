@@ -1,30 +1,32 @@
 // Place any CSS rules you want to apply on both iOS and Android here.
 // This is where the vast majority of your CSS code goes.
 // Font icon class
+
 .fa {
-   font-family: "FontAwesome";
+  font-family: "FontAwesome";
 }
 // Common page class
+
 .page-content {
-    .page-placeholder {
-        color: $page-icon-color;
-        font-size: $page-content-placeholder-font-size;
-        vertical-align: center;
-        horizontal-align: center;
-    }
-
-    .page-icon {
-        font-size: 72;
-        vertical-align: top;
-        horizontal-align: center;
-        color: $page-icon-color;
-        margin-top: 20%;
-    }
-}
-
-//Action bar
-ActionBar .action-bar-title {
+  .page-placeholder {
+    color: $page-icon-color;
+    font-size: $page-content-placeholder-font-size;
+    vertical-align: center;
     horizontal-align: center;
+  }
+
+  .page-icon {
+    font-size: 72;
+    vertical-align: top;
+    horizontal-align: center;
+    color: $page-icon-color;
+    margin-top: 20%;
+  }
+}
+//Action bar
+
+ActionBar .action-bar-title {
+  horizontal-align: center;
 }
 
 .page {
@@ -32,6 +34,7 @@ ActionBar .action-bar-title {
   flex-direction: column;
   background-color: #FFFFFF;
 }
+
 .form {
   margin-left: 30;
   margin-right: 30;
@@ -44,6 +47,7 @@ ActionBar .action-bar-title {
   height: 90;
   font-weight: bold;
 }
+
 .header {
   horizontal-align: center;
   font-size: 25;
@@ -56,6 +60,7 @@ ActionBar .action-bar-title {
 .input-field {
   margin-bottom: 25;
 }
+
 .input {
   font-size: 18;
   placeholder-color: #FFFFFF;
@@ -63,58 +68,107 @@ ActionBar .action-bar-title {
 
 .btn-primary {
   height: 50;
-  margin: 30 5 15 5;
+  margin: 30 5 15;
   background-color: #FFFFFF;
   border-radius: 5;
   font-size: 20;
   font-weight: 600;
   color: #A8A8A8;
-  }
+}
 
 .login-label {
   horizontal-align: center;
   color: #000000;
   font-size: 16;
 }
+
 .sign-up-label {
   margin-bottom: 20;
 }
+
 .bold {
   color: #000000;
 }
 
 .action-bar {
   background-color: #F7941E;
-  color: #fff
+  color: #fff;
 }
 
 TabView {
   tab-text-color: #022734;
-  selected-tab-text-color: #F7941E
+  selected-tab-text-color: #F7941E;
 }
-
 @import '~nativescript-theme-core/css/core.light.css';
 
-.home-panel{
-    vertical-align: center;
-    font-size: 20;
-    margin: 15;
+.home-panel {
+  vertical-align: center;
+  font-size: 20;
+  margin: 15;
 }
 
-.description-label{
-    margin-bottom: 15;
+.description-label {
+  margin-bottom: 15;
 }
 
 .heading {
-    font-size: 24;
-    font-weight: 600;
+  font-size: 24;
+  font-weight: 600;
 }
 
 .input {
-    margin: 10;
+  margin: 10;
 }
 
 .button {
-    background-color: #F7941E;
-    font-size: 16;
+  background-color: #F7941E;
+  font-size: 16;
+}
+
+.MyMealButton {
+  color: white;
+  background-color: #EA761E;
+  padding: 5px;
+}
+
+.MyStackLayout {
+  padding: 20px;
+}
+
+
+
+.MyMealActionButton {
+  color: white;
+  background-color: #71BF45;
+  padding: 5px;
+}
+
+.MyMealLabel {
+  color: white;
+  font-size: 16;
+  background-color: #EA761E;
+  text-align: center;
+}
+
+.MyTable {
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+.l {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  text-align: center;
+  color: black;
+}
+
+
+.MyStackLayout {
+  padding: 20px;
+}
+
+.MyLabel {
+  padding: 20px;
+  color: black;
 }

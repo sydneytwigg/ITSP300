@@ -10,7 +10,7 @@ http://docs.nativescript.org/cookbook/ui/tab-view
     </TabViewItem>
 
     <TabViewItem title="Meal Plan" ios:iconSource="res://tabIcons/food_s" android:iconSource="res://food_s">
-      <Frame defaultPage="meal/meal-page"></Frame>
+      <Frame defaultPage="mealplan-overview/mealplan-overview-page"></Frame>
     </TabViewItem>
 
     <TabViewItem title="Profile" ios:iconSource="res://tabIcons/profile_s" android:iconSource="res://profile_s">
