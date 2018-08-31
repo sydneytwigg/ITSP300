@@ -18,7 +18,7 @@ http://docs.nativescript.org/cookbook/ui/tab-view
     </TabViewItem>
 
     <TabViewItem title="Shopping" ios:iconSource="res://tabIcons/shopping_s" android:iconSource="res://shopping_s">
-      <Frame defaultPage="shopping/shopping-page"></Frame>
+      <Frame defaultPage="shoppinglist/shoppinglist-page"></Frame>
     </TabViewItem>
 
     <TabViewItem title="Chat" ios:iconSource="res://tabIcons/chat_s" android:iconSource="res://chat_s">
