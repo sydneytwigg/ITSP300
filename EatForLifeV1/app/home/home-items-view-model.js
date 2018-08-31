@@ -3,9 +3,7 @@ var observableModule = require("data/observable");
 function HomeViewModel() {
   var viewModel = observableModule.fromObject({
 
-    onItemTap: function (args) {
-      console.log('Item with index: ' + args.index + ' tapped');
-    },
+
 
     categoricalSource: [
       { Date: "12/03/2018", Weight: 96 },
