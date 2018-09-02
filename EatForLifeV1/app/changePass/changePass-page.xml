@@ -1,0 +1,21 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+
+	<ActionBar title="Change Pasword" class="action-bar">
+	</ActionBar>
+	<ScrollView>
+		<StackLayout class="home-panel">
+
+			<Label text="Current Password" class="heading" />
+			<TextField id="password" hint = "Enter current password..." class="input" />
+			<Label text="New Password" class="heading" />
+			<TextField id="password" hint = "Enter new password..." class="input" />
+			<Label text="Confirm Password" class="heading" />
+			<TextField id="password" hint = "Enter new password..." class="input" />
+
+			<StackLayout orientation="vertical" width="210" height="210" >
+        <Button text="Update Password" tap="updateButton" class="button" />
+			</StackLayout>
+
+		</StackLayout>
+	</ScrollView>
+</Page>

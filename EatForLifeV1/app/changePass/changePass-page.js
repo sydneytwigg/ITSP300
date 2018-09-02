@@ -22,30 +22,30 @@ function pageLoaded(args) {
     */
   var page = args.object;
 
-
+  /*
+    A page’s bindingContext is an object that should be used to perform
+    data binding between XML markup and JavaScript code. Properties
+    on the bindingContext can be accessed using the {{ }} syntax in XML.
+    In this example, the {{ message }} and {{ onTap }} bindings are resolved
+    against the object returned by createViewModel().
+    You can learn more about data binding in NativeScript at
+    https://docs.nativescript.org/core-concepts/data-binding.
+    */
   page.bindingContext = profileViewModel;
 }
 
-function bmiButton(args){
-  const button = args.object;
-  const page = button.page;
-  page.frame.navigate("./demo-bmi/demo-bmi-page");
+function updateButton(args){
+  /*
+  Enter code to UPDATE the data in the database for the current user.
+*/
+
 }
 
-function changePassButton(args){
-  const button = args.object;
-  const page = button.page;
-  page.frame.navigate("./changePass/changePass-page");
-}
-
-function getDetails(){
-
-  textName : 
-  textSurname : 
-  textEmail :
-  textPhone :
-  textIDNo : 
-}
-
+/*
+Exporting a function in a NativeScript code-behind file makes it accessible
+to the file’s corresponding XML file. In this case, exporting the pageLoaded
+function here makes the pageLoaded="pageLoaded" binding in this page’s XML
+file work.
+*/
 exports.pageLoaded = pageLoaded;
 exports.bmiButton = bmiButton;
