@@ -1,0 +1,30 @@
+{
+	"time": "Mon Oct 29 2018 12:29:56 GMT+0200 (South Africa Standard Time)",
+	"nativePlatformStatus": "3",
+	"bundle": false,
+	"release": false,
+	"changesRequireBuild": true,
+	"projectFileHash": "42b4b067ffc139a2899268c1fe0f980565809b00bb4f9028477fe1319668f3ce",
+	"changesRequireBuildTime": "Mon Oct 29 2018 12:29:56 GMT+0200 (South Africa Standard Time)",
+	"appFilesHashes": {
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\app.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\views\\list\\list.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\views\\login\\login.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\views\\login\\login.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\app.js": "9ee4ca2ef410aa6e4cbd6dcb94175a6c3152d4d2",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\package.json": "986a40a224dfa56d803c1018aeef18d4753b5768",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\platform.android.css": "c2b2298f4eadbf28d1e31f4e4949840343b0f15f",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\platform.ios.css": "c388d679494c419ad29f75ecea18916ad4c94bc6",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\README.md": "c8f98a5aa76e9c68b874f2d986c47887ecf291e0",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\shared\\config.js": "04201dc45a8fb2143588af41dfe461c8911f204f",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\shared\\utils\\ios-swipe-delete.js": "9e53cfa50b8ffc800577cf369fc02d0305f6bc7a",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\shared\\view-models\\grocery-list-view-model.js": "c60131df24ff3dc48a003f398ae308a0610aaba7",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\shared\\view-models\\user-view-model.js": "299d6db6b89cbd5e540895873b739c185dae1904",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\views\\list\\list.css": "a23f40d42eeb4a3a260e46ae6200131ba69a1c88",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\views\\register\\register.js": "0e7de3cc720dbe889b759dd6e91c9cbbd0170084",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\views\\list\\list.xml": "66d557bc2d6a615b31d8ae685b0a40aa521fc27b",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\views\\login\\login.xml": "df3ee2b2dd5fef51fa1c8dbc61bd1cf0ece2e5ef",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\views\\register\\register.xml": "629baa5c69bda3171b9b1eb1d0ff7f684609bd6b",
+		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\EFL-Login-Register\\app\\images\\apple.jpg": "c033a7a48829675b73f5d1db5360ffd53a737e01"
+	}
+}
