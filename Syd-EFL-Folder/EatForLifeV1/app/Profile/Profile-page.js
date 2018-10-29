@@ -1,13 +1,21 @@
 var frameModule = require("ui/frame");
 var ProfileViewModel = require("./Profile-view-model");
 
-var profileViewModel = new ProfileViewModel();
+
+
+var Sqlite = require("nativescript-sqlite");
 
 function pageLoaded(args) {
 
   var page = args.object;
+  var db_name = "eatforlife.db";
 
-  page.bindingContext = profileViewModel;
+	new Sqlite(db_name).then(db => {
+		page.bindingContext = ProfileViewModel(db);
+	}, error => {
+		alert("DATABASE ERROR", error);
+	});
+
 }
 
 function bmiButton(args){
