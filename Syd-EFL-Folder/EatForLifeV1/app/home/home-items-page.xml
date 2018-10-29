@@ -1,0 +1,51 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+
+	<ActionBar title="Home" class="action-bar">
+	</ActionBar>
+	<ScrollView>
+		<FlexboxLayout flexDirection="column" class="body">
+			<Label text="Welcome, [User]" flexGrow="1" class="header-label" />
+			<Label text=" " />
+
+			<GridLayout columns="200, 200,150" rows="40, 40, 40" width="500" height="120" backgroundColor="#f2f2f2">
+				<Label text="Current Weight" row="0" col="0" class="MyTable" />
+				<Label text="86kg" row="0" col="1" class="MyTable" />
+				<Label text="Weight Lost" row="1" col="0" class="MyTable" />
+				<Label text="10kg" row="1" col="1" class="MyTable" />
+				<Label text="BMI" row="2" col="0" class="MyTable" />
+				<Label text="27" row="2" col="1" class="MyTable" />
+			</GridLayout>
+			<Progress value="{{ progressValue }}" maxValue="100" />
+			<Label text=" " />
+			<Label text="Weight Progress:" flexGrow="2" />
+
+			<GridLayout rows="*" xmlns:chart="nativescript-ui-chart" height="600px">
+				<chart:RadCartesianChart row="0">
+					<chart:RadCartesianChart.series>
+						<chart:LineSeries items="{{ categoricalSource }}" categoryProperty="Date" valueProperty="Weight">
+							<chart:LineSeries.horizontalAxis>
+								<chart:CategoricalAxis/>
+							</chart:LineSeries.horizontalAxis>
+							<chart:LineSeries.verticalAxis>
+								<chart:LinearAxis/>
+							</chart:LineSeries.verticalAxis>
+						</chart:LineSeries>
+					</chart:RadCartesianChart.series>
+				</chart:RadCartesianChart>
+			</GridLayout>
+			<Label text=" " />
+			<Label text="Badges Unlocked" flexGrow="3" />
+			<ListView class="list-group" items="{{ countries }}" itemTap="{{ onItemTap }}" style="height:1250px">
+				<ListView.itemTemplate>
+					<FlexboxLayout flexDirection="row" class="list-group-item">
+						<Image src="{{ imageSrc }}" class="thumb img-circle" />
+						<Label text="{{ name }}" class="list-group-item-heading" verticalAlignment="center" style="width: 60%" />
+					</FlexboxLayout>
+				</ListView.itemTemplate>
+			</ListView>
+		</FlexboxLayout>
+
+
+
+	</ScrollView>
+</Page>
