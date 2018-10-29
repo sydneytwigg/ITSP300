@@ -1,4 +1,4 @@
-<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd" backgroundColor="white" navigatingTo="onNavigatingTo">
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd" backgroundColor="white" pageLoaded="pageLoaded">
 
 	<ActionBar title="View Profile" class="action-bar">
 	</ActionBar>
