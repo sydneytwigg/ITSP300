@@ -1,9 +1,9 @@
 const observableModule = require("data/observable");
 
-function MealplanOverviewViewModel() {
+function MailMeViewModel() {
     const viewModel = observableModule.fromObject({});
 
     return viewModel;
 }
 
-module.exports = MealplanOverviewViewModel;
+module.exports = MailMeViewModel;

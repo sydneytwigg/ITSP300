@@ -1,0 +1,33 @@
+<Page loaded="pageLoaded"  xmlns="http://www.nativescript.org/tns.xsd">
+
+  <ActionBar title="Mail my diet" class="action-bar">
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" itemTap="onItemTap" name="myBackBut"></NavigationButton>
+  </ActionBar>
+
+  <ScrollView>
+    <StackLayout class="MyStackLayout" >
+
+      <StackLayout class="MyStackLayout">
+
+        <Label text="Mail your personal meal plan"  class="MyLabel"/>
+
+        <StackLayout class="input-field">
+          <TextField  hint="Email address" />
+				
+          <Label class="hr-light" />
+        </StackLayout>
+
+        <StackLayout class="input-field">
+          <TextField  hint="Side note" />
+          <Label class="hr-light" />
+        </StackLayout>
+
+        <button class="MyMealActionButton"  text="Mail">Mail </button>
+
+      </StackLayout>
+
+
+
+    </StackLayout>
+  </ScrollView>
+</Page>
