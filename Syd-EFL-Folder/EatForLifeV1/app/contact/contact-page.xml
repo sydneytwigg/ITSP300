@@ -1,9 +1,22 @@
 <Page navigatingTo="onNavigatingTo" class="page"
     xmlns="http://schemas.nativescript.org/tns.xsd" >
-    <ActionBar class="action-bar">
-        <Label class="action-bar-title" text="Home"></Label>
+    <Page.actionBar>
+      <ActionBar class="action-bar">
+          <Label class="action-bar-title" text="Contact Us"></Label>
     </ActionBar>
-
-    <StackLayout>
+  </Page.actionBar>
+    <StackLayout class="form">
+      <StackLayout class="input-field">
+            <Label text="Name" class="label" textWrap="true"></Label>
+            <TextField #name hint="Name" text="" class="input input-border" autocorrect="false"></TextField>
+        </StackLayout>
+        <StackLayout class="input-field">
+            <Label text="Email" class="label" textWrap="true"></Label>
+            <TextField #email hint="Email" text="" class="input input-border" autocorrect="false"></TextField>
+        </StackLayout>
+        <StackLayout class="input-field">
+            <Label text="Message" class="label" textWrap="true"></Label>
+            <TextField #message hint="Message" text="" class="input input-border" autocorrect="false"></TextField>
+        </StackLayout>
     </StackLayout>
 </Page>
