@@ -8,6 +8,9 @@ var Sqlite = require("nativescript-sqlite");
 function pageLoaded(args) {
 
   var page = args.object;
+  if (!Sqlite.exists("eatforlife.db")) {
+    Sqlite.copyDatabase("eatforlife.db");
+  }
   var db_name = "eatforlife.db";
 
 	new Sqlite(db_name).then(db => {
