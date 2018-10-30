@@ -3,9 +3,15 @@
 	@import '~/custom.css'; /* this downloaded theme */
 
 .page {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: 20px;
   align-items: center;
   flex-direction: column;
   background-color: #FFFFFF;
+  padding: 100px;
 }
 
 .form {

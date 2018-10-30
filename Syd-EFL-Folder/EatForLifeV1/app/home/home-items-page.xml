@@ -2,7 +2,7 @@
 
 	<ActionBar title="Home" class="action-bar">
 	</ActionBar>
-	<ScrollView>
+	<ScrollView class="contents">
 		<FlexboxLayout flexDirection="column" class="body">
 			<Label text="Welcome, [User]" flexGrow="1" class="segmented-bar h2" />
 
