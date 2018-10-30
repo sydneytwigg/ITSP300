@@ -1,11 +1,10 @@
-<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd" backgroundColor="white">
 
 	<ActionBar title="Home" class="action-bar">
 	</ActionBar>
 	<ScrollView>
 		<FlexboxLayout flexDirection="column" class="body">
-			<Label text="Welcome, [User]" flexGrow="1" class="header-label" />
-			<Label text=" " />
+			<Label text="Welcome, [User]" flexGrow="1" class="home-label" />
 
 			<GridLayout columns="200, 200,150" rows="40, 40, 40" width="500" height="120" backgroundColor="#f2f2f2">
 				<Label text="Current Weight" row="0" col="0" class="MyTable" />

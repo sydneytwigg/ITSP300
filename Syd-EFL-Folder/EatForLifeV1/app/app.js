@@ -1,5 +1,5 @@
 const application = require("application");
-
+application.setCssFileName("app.css");
 application.run({ moduleName: "app-root" });
 //application.start({moduleName: "login/login-page"});
 //application.run({moduleName: "login/login-page"});
