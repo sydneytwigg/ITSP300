@@ -4,19 +4,19 @@
 	</ActionBar>
 	<ScrollView>
 		<FlexboxLayout flexDirection="column" class="body">
-			<Label text="Welcome, [User]" flexGrow="1" class="home-label" />
+			<Label text="Welcome, [User]" flexGrow="1" class="segmented-bar h2" />
 
 			<GridLayout columns="200, 200,150" rows="40, 40, 40" width="500" height="120" backgroundColor="#f2f2f2">
-				<Label text="Current Weight" row="0" col="0" class="MyTable" />
-				<Label text="86kg" row="0" col="1" class="MyTable" />
-				<Label text="Weight Lost" row="1" col="0" class="MyTable" />
-				<Label text="10kg" row="1" col="1" class="MyTable" />
-				<Label text="BMI" row="2" col="0" class="MyTable" />
-				<Label text="27" row="2" col="1" class="MyTable" />
+				<Label text="Current Weight" row="0" col="0" class="MyTable label text-primary body" />
+				<Label text="86kg" row="0" col="1" class="MyTable label text-primary body" />
+				<Label text="Weight Lost" row="1" col="0" class="MyTable label text-primary body" />
+				<Label text="10kg" row="1" col="1" class="MyTable label text-primary body" />
+				<Label text="BMI" row="2" col="0" class="MyTable label text-primary body" />
+				<Label text="27" row="2" col="1" class="MyTable label text-primary body" />
 			</GridLayout>
 			<Progress value="{{ progressValue }}" maxValue="100" />
 			<Label text=" " />
-			<Label text="Weight Progress:" flexGrow="2" />
+			<Label text="Weight Progress:" flexGrow="2" class="segmented-bar h2"/>
 
 			<GridLayout rows="*" xmlns:chart="nativescript-ui-chart" height="600px">
 				<chart:RadCartesianChart row="0">
@@ -33,7 +33,7 @@
 				</chart:RadCartesianChart>
 			</GridLayout>
 			<Label text=" " />
-			<Label text="Badges Unlocked" flexGrow="3" />
+			<Label text="Badges Unlocked" flexGrow="3" class="segmented-bar h2"/>
 			<ListView class="list-group" items="{{ countries }}" itemTap="{{ onItemTap }}" style="height:1250px">
 				<ListView.itemTemplate>
 					<FlexboxLayout flexDirection="row" class="list-group-item">
