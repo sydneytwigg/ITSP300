@@ -8,15 +8,16 @@
     <StackLayout class="form">
       <StackLayout class="input-field">
             <Label text="Name" class="label" textWrap="true"></Label>
-            <TextField #name hint="Name" text="" class="input input-border" autocorrect="false"></TextField>
+            <TextField #name hint="Name" text="{{ name }}" class="input input-border" autocorrect="false"></TextField>
         </StackLayout>
         <StackLayout class="input-field">
             <Label text="Email" class="label" textWrap="true"></Label>
-            <TextField #email hint="Email" text="" class="input input-border" autocorrect="false"></TextField>
+            <TextField #email hint="Email" text="{{ email }}" class="input input-border" autocorrect="false"></TextField>
         </StackLayout>
         <StackLayout class="input-field">
             <Label text="Message" class="label" textWrap="true"></Label>
-            <TextField #message hint="Message" text="" class="input input-border" autocorrect="false"></TextField>
+            <TextField #message hint="Message" text="{{ message }}" class="input input-border" autocorrect="false"></TextField>
         </StackLayout>
+        <Button text="Submit" tap="{{ sendEmail }}" class="btn btn-primary"></Button>
     </StackLayout>
 </Page>
