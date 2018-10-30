@@ -19,9 +19,33 @@ function btnViewMeal(args){
 }
 
 function btnMail(args) {
-    const button = args.object;
-    const page = button.page;
-    page.frame.navigate("./mail-me/mail-me-page")
+    //Import 
+    var email = require("nativescript-email");
+
+    //check availability
+    email.available().then(function (avail) {
+        console.log("Email available? " + avail);
+    })
+
+    //Compose - create file object
+    var fs = require("file-system");
+    var appPath = fs.knownFolders.currentApp().path;
+    var logoPath = "C:/Users/andre/Desktop/Extract/app/App_Resources/Android\dowload.jpg";
+    const page = args.object.page;
+    const vm = page.bindingContext;
+    email.compose({
+        subject: "EatForLife Diet plan",
+        body: "This is your personal EatForLife diet plan. ",
+        to: ['andreacloetekaap@outlook.com'],
+
+    }).then(
+        function () {
+            console.log("Email composer closed");
+        }, function (err) {
+            console.log("Error: " + err);
+        });
+
+   
 }
 function btnPrint(args) {
     const button = args.object;
