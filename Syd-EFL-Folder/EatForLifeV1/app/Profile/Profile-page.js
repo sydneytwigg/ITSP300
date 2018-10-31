@@ -8,19 +8,20 @@ var Sqlite = require("nativescript-sqlite");
 function pageLoaded(args) {
 
   var page = args.object;
-  if (!Sqlite.exists("eatforlife.db")) {
-    Sqlite.copyDatabase("eatforlife.db");
+	
+  var db_name = "eatforlife.sqlite";
+	
+  if (!Sqlite.exists(db_name)) {
+    Sqlite.copyDatabase(db_name);
   }
-  var db_name = "eatforlife.db";
 
-	new Sqlite(db_name).then(db => {
-		page.bindingContext = ProfileViewModel(db);
-	}, error => {
-		alert("DATABASE ERROR", error);
-	});
+  
 
-}
-
+    new Sqlite(db_name).then(db => {
+        page.bindingContext = ProfileViewModel(db);
+    });
+	
+	
 function bmiButton(args){
   const button = args.object;
   const page = button.page;
