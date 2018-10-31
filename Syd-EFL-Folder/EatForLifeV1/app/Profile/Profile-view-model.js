@@ -1,15 +1,29 @@
-const observableModule = require("data/observable");
+const Observable = require("tns-core-modules/data/observable").Observable;
+const fromObject = require("tns-core-modules/data/observable").fromObject;
 
+const fromObjectRecursive = require("tns-core-modules/data/observable").fromObjectRecursive;
+
+var dialogs = require("tns-core-modules/ui/dialogs");
 var Sqlite = require("nativescript-sqlite");
 
 function ProfileViewModel(db) {
-    const viewModel = observableModule.fromObject({});
+    var viewModel = new Observable();
+    const newViewModel = fromObject({ "firstname": "" });
+    
+    viewModel.select = function () {
+        db.get("SELECT * FROM client").then(rows => {
 
-    	var clients = [];
-    	viewModel.clients = [];
-    	viewModel.has_clients = false;
-   	
-   		db.all("SELECT * FROM client").then((err, rs) => {
+            rows.forEach((w) => {
+                console.log(w)
+            });
+		/*		for(var row in rows){
+				window.alert("result"+ rows);
+				
+        var clients = [];
+        viewModel.clients = [];
+        viewModel.has_clients = false;
+    
+        db.all("SELECT * FROM client").then((err, rs) => {
     if(!err){
         rs.forEach((c) => {
     clients.push({
@@ -26,7 +40,14 @@ viewModel.set('clients', clients);
  
     }  
 });
-   	
+			}*/
+
+            
+            console.log("Button Working ");
+        }, error => {
+            console.log("SELECT ERROR", error);
+        });
+    }
 
     return viewModel;
 }
