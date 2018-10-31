@@ -19,7 +19,8 @@
     "nativescript-email": "1.5.3",
     "nativescript-sqlite": "^2.2.3",
     "nativescript-theme-core": "~1.0.4",
-    "nativescript-ui-chart": "^3.8.0"
+    "nativescript-ui-chart": "^3.8.0",
+    "tns-core-modules": "^4.2.1"
   },
   "devDependencies": {
     "eslint": "~4.9.0",
