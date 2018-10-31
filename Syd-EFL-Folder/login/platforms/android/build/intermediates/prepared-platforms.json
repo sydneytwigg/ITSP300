@@ -1,0 +1,23 @@
+{
+    "kinvey-nativescript-sdk": true,
+    "nativescript-theme-core": true,
+    "tns-core-modules": true,
+    "nativescript-hook": true,
+    "nativescript-sqlite": true,
+    "nativescript-urlhandler": true,
+    "rxjs": true,
+    "tns-core-modules-widgets": true,
+    "glob": true,
+    "mkdirp": true,
+    "tslib": true,
+    "inflight": true,
+    "inherits": true,
+    "minimatch": true,
+    "once": true,
+    "path-is-absolute": true,
+    "minimist": true,
+    "wrappy": true,
+    "brace-expansion": true,
+    "balanced-match": true,
+    "concat-map": true
+}

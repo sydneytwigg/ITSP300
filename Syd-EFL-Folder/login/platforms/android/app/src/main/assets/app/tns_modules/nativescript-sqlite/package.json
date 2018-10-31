@@ -1,0 +1,75 @@
+{
+  "_from": "nativescript-sqlite@latest",
+  "_id": "nativescript-sqlite@2.2.3",
+  "_inBundle": false,
+  "_integrity": "sha512-BSB7ao0Vqq4lO0im22CoAimBE4EB1znrygMDag/LgfAbOFRMJKHQZnkFL6/Gf2vgjsQ2/Z/v0KgNOHVvIonxpA==",
+  "_location": "/nativescript-sqlite",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-sqlite@latest",
+    "name": "nativescript-sqlite",
+    "escapedName": "nativescript-sqlite",
+    "rawSpec": "latest",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "/kinvey-nativescript-sdk"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-sqlite/-/nativescript-sqlite-2.2.3.tgz",
+  "_shasum": "5edbadd9483d5ef3b733422e8245cff0c29bdcae",
+  "_spec": "nativescript-sqlite@latest",
+  "_where": "C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\Syd-EFL-Folder\\login\\node_modules\\kinvey-nativescript-sdk",
+  "author": {
+    "name": "Nathanael Anderson",
+    "email": "nathan@master-technology.com"
+  },
+  "bugs": {
+    "url": "https://github.com/nathanaela/nativescript-sqlite/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A sqlite NativeScript module for Android and iOS",
+  "homepage": "https://github.com/nathanaela/nativescript-sqlite",
+  "keywords": [
+    "NativeScript",
+    "SQL",
+    "SQLite",
+    "SQLCipher",
+    "Encrypted",
+    "Database",
+    "DB",
+    "iOS",
+    "Android",
+    "JavaScript",
+    "encryption"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/nathanaela/nativescript-sqlite/blob/master/LICENSE"
+  },
+  "main": "sqlite",
+  "name": "nativescript-sqlite",
+  "nativescript": {
+    "platforms": {
+      "android": "1.4.0",
+      "ios": "1.4.0"
+    },
+    "plugin": {
+      "nan": "true",
+      "pan": "true",
+      "core3": "true",
+      "core4": "true",
+      "vue": "true",
+      "category": "Database"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanaela/nativescript-sqlite.git"
+  },
+  "typings": "sqlite.d.ts",
+  "version": "2.2.3"
+}
