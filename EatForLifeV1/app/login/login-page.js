@@ -1,28 +1,40 @@
-const LoginPageViewModel = require("./login-page-view-model");
+var frameModule = require("tns-core-modules/ui/frame");
+var LoginViewModel = require("./login-page-view-model");
 
-/* ***********************************************************
-* Use the "onNavigatingTo" handler to initialize the page binding context.
-*************************************************************/
-function onNavigatingTo(args) {
-    const page = args.object;
-    page.bindingContext = new LoginPageViewModel();
+var loginViewModel = new LoginViewModel();
+
+function pageLoaded(args) {
+
+    var page = args.object;
+    page.bindingContext = loginViewModel;
 }
-
-
-function onSigninButtonTap(args) {
+function Register(args) {
     const button = args.object;
-    const bindingContext = button.bindingContext;
-
-    bindingContext.signIn();
+    const page = button.page;
+    page.frame.navigate("./register/register-page");
 }
 
-function onForgotPasswordTap() {
-    /* ***********************************************************
-    * Call your Forgot Password logic here.
-    *************************************************************/
+function LoginValidate() {
+    var email = loginViewModel.get("email");
+    var password = loginViewModel.get("password");
+
+    //insert the values into db
+
+    // var password = this.get("password");
+    if (email == "a" && password == "1") {
+        alert("Login");
+    } else {
+        alert("Login failed");
+    }
+
 }
 
-exports.onNavigatingTo = onNavigatingTo;
+function forgotPassword() {
+   
+    alert("yay");
+}
 
-exports.onSigninButtonTap = onSigninButtonTap;
-exports.onForgotPasswordTap = onForgotPasswordTap;
+exports.LoginValidate = LoginValidate;
+exports.Register = Register;
+exports.forgotPassword = forgotPassword;
+exports.pageLoaded = pageLoaded;
