@@ -1,4 +1,0 @@
-#Mon Oct 29 20:41:09 CAT 2018
-base.0=C\:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\Syd-EFL-Folder\\login\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex

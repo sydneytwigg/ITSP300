@@ -1,9 +1,0 @@
-{
-	"tns-core-modules-widgets": {
-		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\Syd-EFL-Folder\\login\\node_modules\\tns-core-modules-widgets\\platforms\\android\\widgets-release.aar": "6e7dcdb4c48759bcdd69dc02a5f4bc7b068fa181"
-	},
-	"kinvey-nativescript-sdk": {
-		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\Syd-EFL-Folder\\login\\node_modules\\kinvey-nativescript-sdk\\platforms\\android\\AndroidManifest.default.xml": "b0796a3cc172a00335d0d885d01c3412dea8dedc",
-		"C:\\Users\\Sydney Twigg\\Documents\\CTI\\Third Year\\ITSP300\\EatForLifeApp_GitHub\\ITSP300\\Syd-EFL-Folder\\login\\node_modules\\kinvey-nativescript-sdk\\platforms\\android\\include.gradle": "6b61628bf923a8d7f8d9230f96ec0ea09621c6fb"
-	}
-}
