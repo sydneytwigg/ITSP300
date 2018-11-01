@@ -2,10 +2,10 @@ var observableModule = require("tns-core-modules/data/observable");
 const fromObject = require("tns-core-modules/data/observable").fromObject;
 
 function RegisterViewModel() {
-  var viewModel = observableModule.fromObject({
-  });
+    var viewModel = observableModule.fromObject({
+    });
 
-  return viewModel;
+    return viewModel;
 }
 
 module.exports = RegisterViewModel;

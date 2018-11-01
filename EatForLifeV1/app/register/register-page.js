@@ -8,28 +8,33 @@ var registerViewModel = new RegisterViewModel();
 
 function pageLoaded(args) {
 
-  var page = args.object;  
+    var page = args.object;
     page.bindingContext = registerViewModel;
-} 
+}
 
-function RegisterValidate() {
-    var email = registerViewModel.get("email");
+function RegisterValidate(args) {
+    var validator = require("email-validator");
+
+    var emailVal = registerViewModel.get("email");
     var password = registerViewModel.get("password");
     var confirmPassword = registerViewModel.get("ConfirmPassword password");
 
-    //insert the values into db
-
-    // var password = this.get("password");
-    if (email == "a" && password == "1" && email == confirmPassword) {
-                    alert("Done");
-          
-           } else {
-        alert("enter detail");
-            }
+    if (validator.validate(emailVal) == true) {
+        if (password != null) {
+            alert("Registered");
+            //db user email and password insert here
+            const button = args.object;
+            const page = button.page;
+            page.frame.navigate("./login/login-page")
+        } else {
+            alert("Enter password");
+        }
+    } else {
+        alert("Enter valid email address");
+    }
 }
 
 exports.RegisterValidate = RegisterValidate;
-
 exports.pageLoaded = pageLoaded;
 
 
