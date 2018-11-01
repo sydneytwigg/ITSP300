@@ -5,8 +5,9 @@
 	</ActionBar>
 	<ScrollView class="contents">
 		<FlexboxLayout flexDirection="column" class="body">
+      <Label text=" " />
 			<Label text="{{ disName }}" flexGrow="1" class="segmented-bar h2" />
-
+      <Label text=" " />
 			<GridLayout columns="200, 200,150" rows="40, 40, 40" width="500" height="120" backgroundColor="#f2f2f2">
 				<Label text="Current Weight" row="0" col="0" class="MyTable label text-primary body" />
 				<Label text="{{ currWeight }}" row="0" col="1" class="MyTable label text-primary body" />
@@ -15,9 +16,12 @@
 				<Label text="BMI" row="2" col="0" class="MyTable label text-primary body" />
 				<Label text="{{ bmi }}" row="2" col="1" class="MyTable label text-primary body" />
 			</GridLayout>
-			<Progress value="{{ progressValue }}" maxValue="100" />
-			<Label text=" " />
-			<Label text="Weight Progress:" flexGrow="2" class="segmented-bar h2"/>
+      <Label text=" Progress Value :" flexGrow="2" class="segmented-bar h2"/>
+      <Progress value="{{ progressValue }}" maxValue="100" />
+			
+      <Label text=" " />
+      
+			<Label text=" Weight Progress:" flexGrow="2" class="segmented-bar h2"/>
 
 			<GridLayout rows="*" xmlns:chart="nativescript-ui-chart" height="600px">
 				<chart:RadCartesianChart row="0">
@@ -34,8 +38,7 @@
 				</chart:RadCartesianChart>
 			</GridLayout>
 			<Label text=" " />
-			<Label text="Badges Unlocked" flexGrow="3" class="segmented-bar h2"/>
-			<ListView class="list-group" items="{{ countries }}" itemTap="{{ onItemTap }}" style="height:1250px">
+					<ListView class="list-group" items="{{ countries }}" itemTap="{{ onItemTap }}" style="height:1250px">
 				<ListView.itemTemplate>
 					<FlexboxLayout flexDirection="row" class="list-group-item">
 						<Image src="{{ imageSrc }}" class="thumb img-circle" />

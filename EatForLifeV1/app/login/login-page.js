@@ -34,8 +34,11 @@ function LoginValidate(args) {
     }
 }
 
-function forgotPassword() {   
-    alert("yay");
+function forgotPassword(args) {   
+    //alert("yay");
+    const button = args.object;
+    const page = button.page;
+    page.frame.navigate("./resetpassword/resetpassword-page");
 }
 
 exports.LoginValidate = LoginValidate;
