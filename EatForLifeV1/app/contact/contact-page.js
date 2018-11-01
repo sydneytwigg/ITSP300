@@ -10,11 +10,6 @@ function onNavigatingTo(args) {
     var txtEmail = view.getViewById(page, "contactEmail");
     var txtMessage = view.getViewById(page, "contactMessage");
 
-    sendEmail.on("tap", function () {
-      var result =="";
-      
-    });
-
     page.bindingContext = new ContactViewModel();
 }
 

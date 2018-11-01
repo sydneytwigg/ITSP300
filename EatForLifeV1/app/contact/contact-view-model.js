@@ -5,15 +5,16 @@ var email = require("nativescript-email");
 function ContactViewModel() {
     const viewModel = observableModule.fromObject({
       sendEmail: function(){
+
         //check email available
         email.available().then(function(avail) {
         console.log("Email available? " + avail);
-        })
+      });
 
         //validation
-        if (!this.get("name") || (!this.get("message")) || (!this.get("email")){
-          return;
-        }
+        //if (!this.get("name") || (!this.get("message")) || (!this.get("email")){
+          //return;
+        //}
 
         // let's first create a File object using the tns file module
         var fs = require("file-system");
@@ -29,9 +30,8 @@ function ContactViewModel() {
         }, function(err) {
           console.log("Error: " + err);
         });
-            }
-          });
-
+        }
+      });
     return viewModel;
 }
 
