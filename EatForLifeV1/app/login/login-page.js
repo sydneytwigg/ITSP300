@@ -14,23 +14,27 @@ function Register(args) {
     page.frame.navigate("./register/register-page");
 }
 
-function LoginValidate() {
-    var email = loginViewModel.get("email");
+function LoginValidate(args) {
+    var validator = require("email-validator");
+    var emailVal = loginViewModel.get("email");
     var password = loginViewModel.get("password");
 
-    //insert the values into db
-
     // var password = this.get("password");
-    if (email == "a" && password == "1") {
-        alert("Login");
+    if (validator.validate(emailVal) == true) {
+        if (password != null) {          
+            //db user email and password insert here
+            const button = args.object;
+            const page = button.page;
+            page.frame.navigate("./home/home-items-page");
+        } else {
+            alert("Enter password");
+        }
     } else {
-        alert("Login failed");
+        alert("Enter valid email address");
     }
-
 }
 
-function forgotPassword() {
-   
+function forgotPassword() {   
     alert("yay");
 }
 
