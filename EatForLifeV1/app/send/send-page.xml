@@ -1,0 +1,20 @@
+
+<Page loaded="pageLoaded" class="page" actionBarHidden="false" xmlns="http://www.nativescript.org/tns.xsd">
+  <ActionBar title="Send diet" class="action-bar">
+  </ActionBar>
+  <FlexboxLayout class="page">
+    <StackLayout class="form">
+
+      <Label text="Mail your personal meal plan"  class="MyLabel"/>
+      <StackLayout >
+        <TextField  class="input" text="{{ password }}" hint="Email address" secure="false" />
+        <Label class="hr-light"/>
+      </StackLayout>   
+
+      <Button class="MyMealActionButton" text="Send" tap="send"/>
+      
+    </StackLayout>
+
+  </FlexboxLayout>
+
+</Page>
