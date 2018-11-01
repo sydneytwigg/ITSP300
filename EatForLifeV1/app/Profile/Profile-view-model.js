@@ -8,46 +8,16 @@ var Sqlite = require("nativescript-sqlite");
 
 function ProfileViewModel(db) {
     var viewModel = new Observable();
-    const newViewModel = fromObject({ "firstname": "" });
-    
-    viewModel.select = function () {
-        db.get("SELECT * FROM client").then(rows => {
+       
+    db.get("SELECT * FROM client").then(rows => {
+            viewModel.set("name",rows[10]);
+            viewModel.set("surname", rows[11]);
 
-            rows.forEach((w) => {
-                console.log(w)
-            });
-		/*		for(var row in rows){
-				window.alert("result"+ rows);
-				
-        var clients = [];
-        viewModel.clients = [];
-        viewModel.has_clients = false;
-    
-        db.all("SELECT * FROM client").then((err, rs) => {
-    if(!err){
-        rs.forEach((c) => {
-    clients.push({
-        name: commafy(c[12]),
-        surname: commafy(c[13]) 
-    });
- 
-});
- 
-if(clients.length){
-    viewModel.set('has_clients', true);
-}
-viewModel.set('clients', clients);
- 
-    }  
-});
-			}*/
-
-            
-            console.log("Button Working ");
         }, error => {
-            console.log("SELECT ERROR", error);
+            alert("SELECT ERROR", error);
         });
-    }
+
+       
 
     return viewModel;
 }
