@@ -16,7 +16,7 @@
       </StackLayout>
 
 
-      <Button text="Sign in" tap="LoginValidate"/>
+      <Button text="Sign in" tap="{{ LoginValidate }}"/>
       <Button text="Register" tap="Register"/>
       <Button text="Forgot password" tap="forgotPassword"/>
     </StackLayout>
