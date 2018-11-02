@@ -1,7 +1,8 @@
 var Observable = require("data/observable").Observable;
 var Sqlite = require("nativescript-sqlite");
-var frameModule = require("tns-core-modules/ui/frame");
+let getFrameById = require("tns-core-modules/ui/frame").getFrameById;
 var validator = require("email-validator");
+const topmost = require("tns-core-modules/ui/frame").topmost;
 
 function RegisterViewModel(db) {
     var viewModel = new Observable();
@@ -22,14 +23,17 @@ function RegisterViewModel(db) {
                 db.execSQL("INSERT INTO client (Email, Password, Answer) VALUES (?, ?, ?)",[emailVal, password, answer]).then(id => {
                 alert("Account Created!");
 
-                // Transition back to login
+                topmost().goBack();
 
-                });
+                }, error => {
+                alert("INSERT ERROR", error);
+            });
             */
 
             //This is just to check that there is a db connection on the page
             db.get("SELECT * FROM client").then(rows => {
-                alert("Made it!");
+                alert("Account Created!");
+                topmost().goBack();
 
             }, error => {
                 alert("SELECT ERROR", error);
