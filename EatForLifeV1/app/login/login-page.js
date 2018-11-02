@@ -1,37 +1,24 @@
 var frameModule = require("tns-core-modules/ui/frame");
 var LoginViewModel = require("./login-page-view-model");
-
-var loginViewModel = new LoginViewModel();
+var Sqlite = require("nativescript-sqlite");
 
 function pageLoaded(args) {
 
     var page = args.object;
-    page.bindingContext = loginViewModel;
+    var db_name = "eatforlife.sqlite";
+
+  if (!Sqlite.exists(db_name)) {
+    Sqlite.copyDatabase(db_name);
+  }
+    new Sqlite(db_name).then(db => {
+        page.bindingContext = LoginViewModel(db);
+    });
 }
+
 function Register(args) {
     const button = args.object;
     const page = button.page;
     page.frame.navigate("./register/register-page");
-}
-
-function LoginValidate(args) {
-    var validator = require("email-validator");
-    var emailVal = loginViewModel.get("email");
-    var password = loginViewModel.get("password");
-
-    // var password = this.get("password");
-    if (validator.validate(emailVal) == true) {
-        if (password != null) {          
-            //db user email and password insert here
-            const button = args.object;
-            const page = button.page;
-            page.frame.navigate("./home/home-items-page");
-        } else {
-            alert("Enter password");
-        }
-    } else {
-        alert("Enter valid email address");
-    }
 }
 
 function forgotPassword(args) {   
@@ -41,7 +28,6 @@ function forgotPassword(args) {
     page.frame.navigate("./resetpassword/resetpassword-page");
 }
 
-exports.LoginValidate = LoginValidate;
 exports.Register = Register;
 exports.forgotPassword = forgotPassword;
 exports.pageLoaded = pageLoaded;
