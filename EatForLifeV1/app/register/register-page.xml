@@ -21,7 +21,7 @@
       </StackLayout>
 
 
-      <Button text="Register" tap="RegisterValidate"/>
+      <Button text="Register" tap="{{ RegisterValidate }}"/>
     </StackLayout>
 
 
