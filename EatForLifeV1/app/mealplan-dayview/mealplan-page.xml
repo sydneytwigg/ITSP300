@@ -65,8 +65,8 @@
 				<Label text="Item 5" row="4" col="0" class="MyTable" />
 				<Label text="Measurement" row="4" col="1" class="MyTable" />
 			</GridLayout>
-			<button class="MyMealActionButton" text="Change Diet"></button>
-			<button class="MyMealActionButton" text="Reset Diet"></button>
+			<button class="MyMealActionButton" text="Change Diet" tap="change"></button>
+			<button class="MyMealActionButton" text="Reset Diet" tap="defaultDiet"></button>
 			<Label/>
 		</StackLayout>
 	</ScrollView>

@@ -1,17 +1,16 @@
-var ShoppingListViewModel = require("./ShoppingList-view-model");
 var frameModule = require("tns-core-modules/ui/frame");
-const tabViewModule = require("tns-core-modules/ui/tab-view");
+var ShoppingListViewModel = require("./ShoppingList-view-model");
 
-var shoppingListViewModel = new ShoppingListViewModel();
 
-exports.pageLoaded = function (args) {
-  const page = args.object;
-  page.bindingContext = homeViewModel;
+function onNavigatingTo(args) {
+    var  page = args.object;
+	
+    page.bindingContext = new ShoppingListViewModel();
 }
-
 exports.onItemTap = function (args) {
   const view = args.view;
   const context = view.bindingContext;
 
-  console.log("You tapped: ", context.text);
+ alert(context.Name+" " + context.Amount);
 }
+exports.onNavigatingTo = onNavigatingTo;

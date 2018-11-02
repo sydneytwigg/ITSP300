@@ -1,28 +1,29 @@
 var observableModule = require("tns-core-modules/data/observable");
-const ObservableArray = require("data/observable-array").ObservableArray;
-const switchModule = require("tns-core-modules/ui/switch");
+var ObservableArray = require("data/observable-array").ObservableArray;
+
 
 function ShoppingListViewModel() {
+  
   var viewModel = observableModule.fromObject({
-    onButtonTap: function () {
-      console.log("Button was pressed");
-    },
 
-    data: new ObservableArray([
-      { text: "ACE Instant High Fibre, 2.5 Kg" },
-      { text: "All Bran Flakes, 1 Kg" },
-      { text: "All Bran Instant Porridge, 1 Kg" },
-      { text: "Alphen Original Swiss Muesli, 1.5 Kg" },
-      { text: "Amasi, 200 g" },
-      { text: "Apple, 800g" },
-      { text: "Apple rings - dried, 12 pieces" },
-      { text: "Apple, Green, Raw, Unpeeled, 14" },
-      { text: "Apricot halves - dried, 7" },
-      { text: "Apricot halves - tinned, 3.5" },
-    ])
-    });
 
-    return viewModel;
+    //data: new ObservableArray([
+    //  { pic: "res://icon", Name: "ACE Instant High Fibre", Amount: " 2.5 Kg" },
+    //  { pic: "res://icon", Name: "All Bran Flakes", Amount: "1 Kg" },
+    //  { pic: "res://icon", Name: "All Bran Instant Porridge", Amount: "1 Kg" },
+    //  { pic: "res://icon", Name: "Alphen Original Swiss Muesli", Amount: "1.5 Kg" },
+    //  { pic: "res://icon", Name: "Amasi", Amount: "200 g" },
+    //  { pic: "res://icon", Name: "Apple", Amount: "800g" },
+    //  { pic: "res://icon", Name: "Apple rings - dried", Amount: "2 pieces" },
+    //  { pic: "res://icon", Name: "Apple, Green, Raw, Unpeeled", Amount: "14" },
+    //  { pic: "res://icon", Name: "Apricot halves - dried", Amount: "7" },
+    //  { pic: "res://icon", Name: "Apricot halves - tinned", Amount: "3.5" },
+
+
+    //])
+  });
+
+  return viewModel;
 }
 
 module.exports = ShoppingListViewModel;

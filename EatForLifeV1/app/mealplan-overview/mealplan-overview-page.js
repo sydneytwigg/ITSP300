@@ -29,6 +29,11 @@ function btnLogin(args) {
     const page = button.page;
     page.frame.navigate("./login/login-page")
 }
+function btnShop(args) {
+    const button = args.object;
+    const page = button.page;
+    page.frame.navigate("./ShoppingList/ShoppingList-page")
+}
 
 function send(args) {
     const button = args.object;
@@ -43,3 +48,4 @@ exports.btnViewMeal = btnViewMeal;
 exports.btnPrint = btnPrint;
 exports.btnLogin = btnLogin;
 exports.send = send;
+exports.btnShop = btnShop;

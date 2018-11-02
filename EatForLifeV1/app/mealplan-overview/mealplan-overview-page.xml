@@ -18,7 +18,7 @@
       <button class="MyMealActionButton" tap="send" text="Mail diet"></button>
 
       <button class="MyMealActionButton" tap="btnLogin" text="Login"></button>
-     
+         
 
 		</StackLayout>
 	</ScrollView>
