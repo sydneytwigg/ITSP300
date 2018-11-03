@@ -22,10 +22,11 @@ function RegisterValidate(args) {
      var height = registerViewModel.get("height");
      var weight = registerViewModel.get("weight");
     var answer = registerViewModel.get("answer");
+    var goal = registerViewModel.get("goal");
 
 
   
-        if (password != null && answer != null && name!=null&& surname!=null&&phone!=null&& height!=null&& weight!=null) {
+        if (password != null && answer != null && name!=null&& surname!=null&&phone!=null&& height!=null&& weight!=null&&goal!=null) {
                        if (validator.validate(emailVal) == true) {    
                 alert("Registered");
                 //db user email and password insert here

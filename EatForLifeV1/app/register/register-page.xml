@@ -21,6 +21,10 @@
         <TextField id="weight" class="input" text="{{ weight }}" hint="Weight" secure="false" />
         <Label class="hr-light"/>
       </StackLayout>
+           <StackLayout class="input-field">
+        <TextField id="goal" class="input" text="{{ goal }}" hint="Weight goal (kg)" secure="false" />
+        <Label class="hr-light"/>
+      </StackLayout>
         
               <StackLayout class="input-field">
         <TextField class="input" text="{{ email }}" hint="Email" keyboardType="email" autocorrect="false" autocapitalizationType="none" />

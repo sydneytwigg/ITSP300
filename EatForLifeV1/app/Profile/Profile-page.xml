@@ -28,9 +28,13 @@
 
       <Label text="Height (cm)" class="profile-heading" />
       <TextField text="{{ height }}" secure="false" class="input" />
-
-      <Label text="Wight (kg)" class="profile-heading" />
+  <Label text="Weight (kg)" class="profile-heading" />
       <TextField text="{{ weight }}" secure="false" class="input" />
+      <Label text="Goal weight (kg)" class="profile-heading" />
+      <TextField text="{{ goal }}" secure="false" class="input" />
+                
+                
+    
       
 		</StackLayout>
 			<StackLayout orientation="vertical" width="210" height="210">
