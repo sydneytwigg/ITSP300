@@ -11,11 +11,17 @@ function change(args) {
     page.frame.navigate("./changeDiet/changeDiet-page");
    
 }
-function changeItem(args) {
+
+
+function onEdit(args) {
+    //console.log("Edit item tapped.");
+    //var btn = args.object;
+    //btn.bindingContext.set("isEditing", true);
     const button = args.object;
     const page = button.page;
     page.frame.navigate("./meals/meals-page");
 }
-exports.changeItem = changeItem;
+exports.onEdit = onEdit;
+
 exports.change = change;
 exports.onNavigatingTo = onNavigatingTo;
