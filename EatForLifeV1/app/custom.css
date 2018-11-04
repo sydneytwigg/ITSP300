@@ -14,11 +14,11 @@ background-color: #f7941e;
   align-items: center;
   flex-direction: column;
   background-color: #FFFFFF;
-  padding: 100;
+  padding: 10;
 }
 
 .contents{
-  padding: 100;
+  padding: 10;
 }
 
 .tab-view {
