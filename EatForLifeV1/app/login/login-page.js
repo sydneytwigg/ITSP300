@@ -27,7 +27,14 @@ function forgotPassword(args) {
     const page = button.page;
     page.frame.navigate("./resetpassword/resetpassword-page");
 }
+function admin(args) {
+    //alert("yay");
+    const button = args.object;
+    const page = button.page;
+    page.frame.navigate("./admin/clients/clients-page");
+}
 
+exports.admin = admin;
 exports.Register = Register;
 exports.forgotPassword = forgotPassword;
 exports.pageLoaded = pageLoaded;

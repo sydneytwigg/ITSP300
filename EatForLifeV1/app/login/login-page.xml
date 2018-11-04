@@ -19,6 +19,7 @@
       <Button text="Sign in" tap="{{ LoginValidate }}"/>
       <Button text="Register" tap="Register"/>
       <Button text="Forgot password" tap="forgotPassword"/>
+      <Button text="Admin panel" tap="admin"/>
     </StackLayout>
 
 

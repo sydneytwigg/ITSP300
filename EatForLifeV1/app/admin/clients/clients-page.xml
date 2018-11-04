@@ -1,0 +1,36 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+
+    <ActionBar title="Registered clients" class="action-bar">
+      <ActionItem tap="onEdit" ios.systemIcon="2" android.systemIcon="ic_menu_edit" ios.position="right"
+      visibility="{{ isEditing ? 'collapse' : 'visible' }}"/>
+  <ActionItem tap="onSave" ios.systemIcon="3" android.systemIcon="ic_menu_save" ios.position="right"
+      visibility="{{ isEditing ? 'visible' : 'collapse' }}"/>
+
+    </ActionBar>
+    <ScrollView>
+        <StackLayout class="home-panel">
+            <GridLayout columns="20,100,100,100" rows="40, 40,40" width="2000"
+                height="60" class="MyMealLabel">
+                <Label text="ID" row="0" col="1" />
+                <Label text="Name" row="0" col="2" />
+                <Label text="Surname" row="0" col="3" />
+            </GridLayout>
+            <ListView class="list-group" items="{{ countries }}" itemTap="{{ onItemTap }}"
+                style="height:1250px">             
+                <ListView.itemTemplate>
+                    <FlexboxLayout flexDirection="row" class="list-group-item">
+                        <GridLayout columns="100,100,100" rows="40, 40" width="2000"
+                            height="60">
+                            <Label row="0" col="0" text="{{ id }}" class="list-group-item-heading"
+                                verticalAlignment="center" style="width: 60%" />
+                            <Label row="0" col="1" text="{{ name }}" class="list-group-item-heading"
+                                verticalAlignment="center" style="width: 60%" />
+                            <Label row="0" col="2" text="{{ surname }}" class="list-group-item-heading"
+                                verticalAlignment="center" style="width: 60%" />
+                        </GridLayout>
+                    </FlexboxLayout>
+                </ListView.itemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+</Page>
