@@ -11,9 +11,11 @@ function change(args) {
     page.frame.navigate("./changeDiet/changeDiet-page");
    
 }
-function defaultDiet(args) {
-    alert("Done");
+function changeItem(args) {
+    const button = args.object;
+    const page = button.page;
+    page.frame.navigate("./meals/meals-page");
 }
-exports.defaultDiet = defaultDiet;
+exports.changeItem = changeItem;
 exports.change = change;
 exports.onNavigatingTo = onNavigatingTo;
