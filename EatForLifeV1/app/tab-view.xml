@@ -1,0 +1,22 @@
+<TabView androidTabsPosition="bottom" androidOffscreenTabLimit="0" >
+    <TabViewItem title="Home" ios:iconSource="res://tabIcons/home0" android:iconSource="res://home_s" width="50" height="50">
+        <Frame defaultPage="home/home-items-page"></Frame>
+    </TabViewItem>
+
+    <TabViewItem title="Meal Plan" ios:iconSource="res://tabIcons/food_s" android:iconSource="res://food_s">
+      <Frame defaultPage="mealplan-overview/mealplan-overview-page"></Frame>
+    </TabViewItem>
+
+    <TabViewItem title="Profile" ios:iconSource="res://tabIcons/profile_s" android:iconSource="res://profile_s">
+      <Frame defaultPage="Profile/Profile-page"></Frame>
+    </TabViewItem>
+
+    <TabViewItem title="Shopping" ios:iconSource="res://tabIcons/shopping_s" android:iconSource="res://shopping_s">
+      <Frame defaultPage="ShoppingList/ShoppingList-page"></Frame>
+    </TabViewItem>
+
+    <TabViewItem title="Contact" ios:iconSource="res://tabIcons/chat_s" android:iconSource="res://chat_s">
+        <Frame defaultPage="contact/contact-page"></Frame>
+    </TabViewItem>
+
+</TabView>

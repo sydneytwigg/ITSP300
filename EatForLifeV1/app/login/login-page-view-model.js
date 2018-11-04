@@ -16,8 +16,8 @@ function LoginViewModel(db) {
 
 
     if (validator.validate(emailVal) == true) {
-        if (password != null) {          
-            
+        if (password != null) {
+
 			db.get("SELECT * FROM client WHERE Email = ? AND Password = ?",[emailVal, password]).then(rows => {
                 if (rows != null) {
                     alert("Login Successful");
@@ -25,7 +25,8 @@ function LoginViewModel(db) {
                     const button = args.object;
                     const page = button.page;
                     applicationSettingsModule.setString("EFL-user",emailVal);
-                    page.frame.navigate("./home/home-items-page");
+                    //page.frame.navigate("./home/home-items-page");
+                    application.run({ moduleName: "app-root" });
                 }else{
                     alert("Incorrect Email or Password!");
                 }

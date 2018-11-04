@@ -21,7 +21,7 @@
       <Button text="Forgot password" tap="forgotPassword"/>
     </StackLayout>
 
-  
+
   </FlexboxLayout>
 
 </Page>

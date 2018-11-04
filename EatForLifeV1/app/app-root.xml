@@ -5,6 +5,8 @@ Learn more about the TabView component in this documentation article:
 http://docs.nativescript.org/cookbook/ui/tab-view
 -->
 <TabView androidTabsPosition="bottom" androidOffscreenTabLimit="0" >
+    <Frame defaultPage="login/login-page"></Frame>
+
     <TabViewItem title="Home" ios:iconSource="res://tabIcons/home0" android:iconSource="res://home_s" width="50" height="50">
         <Frame defaultPage="home/home-items-page"></Frame>
     </TabViewItem>
@@ -24,4 +26,6 @@ http://docs.nativescript.org/cookbook/ui/tab-view
     <TabViewItem title="Contact" ios:iconSource="res://tabIcons/chat_s" android:iconSource="res://chat_s">
         <Frame defaultPage="contact/contact-page"></Frame>
     </TabViewItem>
+
+
 </TabView>

@@ -21,7 +21,7 @@ function Register(args) {
     page.frame.navigate("./register/register-page");
 }
 
-function forgotPassword(args) {   
+function forgotPassword(args) {
     //alert("yay");
     const button = args.object;
     const page = button.page;
