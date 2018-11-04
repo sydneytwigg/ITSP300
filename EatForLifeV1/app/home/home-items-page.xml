@@ -38,17 +38,8 @@
 				</chart:RadCartesianChart>
 			</GridLayout>
 			<Label text=" " />
-					<ListView class="list-group" items="{{ countries }}" itemTap="{{ onItemTap }}" style="height:1250px">
-				<ListView.itemTemplate>
-					<FlexboxLayout flexDirection="row" class="list-group-item">
-						<Image src="{{ imageSrc }}" class="thumb img-circle" />
-						<Label text="{{ name }}" class="list-group-item-heading" verticalAlignment="center" style="width: 60%" />
-					</FlexboxLayout>
-				</ListView.itemTemplate>
-			</ListView>
+					
 		</FlexboxLayout>
-
-
 
 	</ScrollView>
 </Page>
