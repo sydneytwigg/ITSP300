@@ -1,0 +1,27 @@
+<Page loaded="pageLoaded" class="page" actionBarHidden="true" xmlns="http://www.nativescript.org/tns.xsd">
+
+  <FlexboxLayout class="page">
+    <StackLayout class="form">
+      <Image class="logo" src="~/images/logo.png"/>
+      <Label class="header" text="EatForLife"/>
+
+      <StackLayout class="input-field">
+        <TextField class="input" text="{{ email }}" hint="Email" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
+        <Label class="hr-light"/>
+      </StackLayout>
+
+      <StackLayout class="input-field">
+        <TextField id="password" class="input" text="{{ password }}" hint="Password" secure="true" />
+        <Label class="hr-light"/>
+      </StackLayout>
+
+
+      <Button text="Sign in" tap="{{ LoginValidate }}"/>
+      <Button text="Register" tap="Register"/>
+      <Button text="Forgot password" tap="forgotPassword"/>
+    </StackLayout>
+
+  
+  </FlexboxLayout>
+
+</Page>

@@ -1,0 +1,25 @@
+<Page navigatingTo="onNavigatingTo" class="page" xmlns="http://schemas.nativescript.org/tns.xsd"  xmlns:chart="nativescript-ui-chart" >
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="BMI"></Label>
+    </ActionBar>
+
+    <StackLayout class="home-panel">
+      <Label text="BMI progress" class="h2"/>
+
+    			<GridLayout rows="*" xmlns:chart="nativescript-ui-chart" height="1000px">
+    				<chart:RadCartesianChart row="0">
+    					<chart:RadCartesianChart.series>
+    						<chart:LineSeries items="{{ categoricalSource }}" categoryProperty="Date" valueProperty="Amount">
+    							<chart:LineSeries.horizontalAxis>
+    								<chart:CategoricalAxis/>
+    							</chart:LineSeries.horizontalAxis>
+    							<chart:LineSeries.verticalAxis>
+    								<chart:LinearAxis/>
+    							</chart:LineSeries.verticalAxis>
+    						</chart:LineSeries>
+    					</chart:RadCartesianChart.series>
+    				</chart:RadCartesianChart>
+    			</GridLayout>
+
+  </StackLayout>
+</Page>

@@ -1,0 +1,25 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+	<ActionBar title="Diet prefrences" class="action-bar" />
+	<ScrollView>
+		<StackLayout class="MyStackLayout">
+			<Label text="The diet plan can be change according to your needs" class="l" />
+<Label text="" />
+			<GridLayout columns="300, 100" rows="40, 40, 40" width="500" height="120" >
+				<Label text="Wheat free" row="0" col="0" class="n" />				
+				<Switch checked="true" row="0" col="1"/>
+
+				<Label text="Lactose free" row="1" col="0" class="n" />
+				<Switch checked="true" row="1" col="1"/>
+				
+
+				<Label text="Vegetarian" row="2" col="0" class="n" />
+					<Switch checked="true" row="2" col="1" />
+			</GridLayout>
+			<Label></Label>
+
+			<button class="MyMealActionButton" text="Save" tap="SaveChanges"></button>
+		
+			<Label/>
+		</StackLayout>
+	</ScrollView>
+</Page>

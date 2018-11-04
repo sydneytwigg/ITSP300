@@ -1,0 +1,73 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+	<ActionBar title="Meals - Day 1"  class="action-bar"/>
+	<ScrollView>
+		<StackLayout class="MyStackLayout">
+			<Label text="The diet plan can be change according to your needs" class="l" />
+			<Label text="BREAKFAST" class="MyMealLabel" />
+
+
+			<GridLayout columns="200, 200,150" rows="40, 40, 40" width="500" height="120" backgroundColor="#f2f2f2">
+				<Label text="Item 1" row="0" col="0" class="MyTable" />
+				<Label text="Measurement" row="0" col="1" class="MyTable" />
+				<Label text="Item 2" row="1" col="0" class="MyTable" />
+				<Label text="Measurement" row="1" col="1" class="MyTable" />
+				<Label text="Item 3" row="2" col="0" class="MyTable" />
+				<Label text="Measurement" row="2" col="1" class="MyTable" />
+			</GridLayout>
+			<Label></Label>
+
+			<Label text="MORNING SNACK" class="MyMealLabel" />
+			<GridLayout columns="200, 200,150" rows="40, 40, 40,40" width="500" height="160" backgroundColor="#f2f2f2">
+				<Label text="Item 1" row="0" col="0" class="MyTable" />
+				<Label text="Measurement" row="0" col="1" class="MyTable" />
+				<Label text="Item 2" row="1" col="0" class="MyTable" />
+				<Label text="Measurement" row="1" col="1" class="MyTable" />
+				<Label text="Item 3" row="2" col="0" class="MyTable" />
+				<Label text="Measurement" row="2" col="1" class="MyTable" />
+				<Label text="Item 4" row="3" col="0" class="MyTable" />
+				<Label text="Measurement" row="3" col="1" class="MyTable" />
+
+			</GridLayout>
+			<Label></Label>
+
+			<Label text="LUNCH" class="MyMealLabel" />
+			<GridLayout columns="200, 200,150" rows="40, 40, 40,40" width="500" height="160" backgroundColor="#f2f2f2">
+				<Label text="Item 1" row="0" col="0" class="MyTable" />
+				<Label text="Measurement" row="0" col="1" class="MyTable" />
+				<Label text="Item 2" row="1" col="0" class="MyTable" />
+				<Label text="Measurement" row="1" col="1" class="MyTable" />
+				<Label text="Item 3" row="2" col="0" class="MyTable" />
+				<Label text="Measurement" row="2" col="1" class="MyTable" />
+				<Label text="Item 4" row="3" col="0" class="MyTable" />
+				<Label text="Measurement" row="3" col="1" class="MyTable" />
+			</GridLayout>
+			<Label></Label>
+
+			<Label text="AFTERNOON SNACK" class="MyMealLabel" />
+			<GridLayout columns="200, 200,150" rows="40, 40" width="500" height="80" backgroundColor="#f2f2f2">
+				<Label text="Item 1" row="0" col="0" class="MyTable" />
+				<Label text="Measurement" row="0" col="1" class="MyTable" />
+				<Label text="Item 2" row="1" col="0" class="MyTable" />
+				<Label text="Measurement" row="1" col="1" class="MyTable" />
+
+			</GridLayout>
+			<Label></Label>
+			<Label text="SUPPER" class="MyMealLabel" />
+			<GridLayout columns="200, 200,150" rows="40, 40, 40,40,40" width="500" height="200" backgroundColor="#f2f2f2">
+				<Label text="Item 1" row="0" col="0" class="MyTable" />
+				<Label text="Measurement" row="0" col="1" class="MyTable" />
+				<Label text="Item 2" row="1" col="0" class="MyTable" />
+				<Label text="Measurement" row="1" col="1" class="MyTable" />
+				<Label text="Item 3" row="2" col="0" class="MyTable" />
+				<Label text="Measurement" row="2" col="1" class="MyTable" />
+				<Label text="Item 4" row="3" col="0" class="MyTable" />
+				<Label text="Measurement" row="3" col="1" class="MyTable" />
+				<Label text="Item 5" row="4" col="0" class="MyTable" />
+				<Label text="Measurement" row="4" col="1" class="MyTable" />
+			</GridLayout>
+			<button class="MyMealActionButton" text="Change Diet" tap="change"></button>
+			<button class="MyMealActionButton" text="Reset Diet" tap="defaultDiet"></button>
+			<Label/>
+		</StackLayout>
+	</ScrollView>
+</Page>
