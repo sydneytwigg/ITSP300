@@ -24,7 +24,7 @@
 			<Label text="Password" class="profile-heading" />
 			<TextField text="{{ pwd }}" secure="true" class="input" hint="Password"/>
              
-      <Label text="Height (cm)" class="profile-heading" />
+      <Label text="Height (m)" class="profile-heading" />
       <TextField text="{{ height }}" secure="false" class="input" hint="Height"/>
            
   <Label text="Weight (kg)" class="profile-heading" />
