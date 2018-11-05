@@ -2,7 +2,7 @@
 <ScrollView>
   <FlexboxLayout class="login-page">
     <StackLayout class="login-form">
-      <Image class="img-rounded" src="~/images/logo.png"/>
+      <Image class="logo" src="~/images/logo.png"/>
       <Label class="login-header-label h1" text="EatForLife"/>
 
       <StackLayout class="input-field">
