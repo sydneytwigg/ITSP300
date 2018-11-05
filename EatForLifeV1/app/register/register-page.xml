@@ -14,7 +14,7 @@
         <Label class="hr-light"/>
       </StackLayout>
            <StackLayout class="input-field">
-        <TextField id="Height" class="input" text="{{ height }}" hint="Height" secure="false" />
+        <TextField id="Height" class="input" text="{{ height }}" hint="Height (m)" secure="false" />
         <Label class="hr-light"/>
       </StackLayout>
       <StackLayout class="input-field">
