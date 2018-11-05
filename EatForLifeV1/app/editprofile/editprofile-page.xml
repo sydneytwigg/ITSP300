@@ -1,0 +1,41 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd" backgroundColor="white" pageLoaded="pageLoaded">
+
+	<ActionBar title="View Profile" class="action-bar">
+    <ActionItem ios.systemIcon="3" android.systemIcon="ic_menu_save"  tap="onSave"></ActionItem>
+    
+	</ActionBar>
+	<ScrollView>
+		<StackLayout class="home-panel2">
+
+            <StackLayout margin-top="20">
+		
+		<Label text="Name" class="profile-heading" />
+         <TextField text="{{ name }}" class="input" hint="Name"/>
+           
+			<Label text="Surname" class="profile-heading" />
+			<TextField text="{{ surname }}" class="input" hint="Surname" />
+    
+			<Label text="Email" class="profile-heading" />
+			<TextField text="{{ email }}" class="input" hint="Email address"/>
+           
+			<Label text="Phone Number" class="profile-heading" keyboardType="number" />
+			<TextField text="{{ phoneNum }}" class="input" hint="Phone number"/>
+            
+			<Label text="Password" class="profile-heading" />
+			<TextField text="{{ pwd }}" secure="true" class="input" hint="Password"/>
+             
+      <Label text="Height (cm)" class="profile-heading" />
+      <TextField text="{{ height }}" secure="false" class="input" hint="Height"/>
+           
+  <Label text="Weight (kg)" class="profile-heading" />
+     <TextField text="{{ weight }}" secure="false" class="input" hint="Weight" />
+          
+      <Label text="Goal weight (kg)" class="profile-heading" />
+     <TextField text="{{ goal }}" secure="false" class="input" hint="Goal Weight" />
+                     
+          
+		</StackLayout>
+		
+		</StackLayout>
+	</ScrollView>
+</Page>

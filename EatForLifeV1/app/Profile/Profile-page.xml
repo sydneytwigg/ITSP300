@@ -1,46 +1,44 @@
 <Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd" backgroundColor="white" pageLoaded="pageLoaded">
 
 	<ActionBar title="View Profile" class="action-bar">
+    <ActionItem tap="onEdit" ios.systemIcon="2" android.systemIcon="ic_menu_edit" ios.position="right"
+    visibility="{{ isEditing ? 'collapse' : 'visible' }}"/>
 	</ActionBar>
 	<ScrollView>
 		<StackLayout class="home-panel2">
 
-			<AbsoluteLayout  margin-bottom="20">
-                <Image src="https://play.nativescript.org/dist/assets/img/NativeScript_logo.png" left="45" top="22" width="114" height="120" />
-                <Button text="Upload Profile Image" tap="{{ upLoadButton }}" left="227" top="55" width="123" height="75" border-radius="10" font-size="2" font-family="Arial" />
-            </AbsoluteLayout>
+      <Label text="This is your personal information" class="l" />
             <StackLayout margin-top="20">
 		
 		<Label text="Name" class="profile-heading" />
-			<TextField text="{{ name }}" class="input" />
-
+              <!--	<TextField text="{{ name }}" class="input" hint="Name"/>-->
+              <Label/>
 			<Label text="Surname" class="profile-heading" />
-			<TextField text="{{ surname }}" class="input" />
-
+		<!--	<TextField text="{{ surname }}" class="input" hint="Surname" />-->
+              <Label/>
 			<Label text="Email" class="profile-heading" />
-			<TextField text="{{ email }}" class="input" />
-
+		<!--	<TextField text="{{ email }}" class="input" hint="Email address"/>-->
+              <Label/>
 			<Label text="Phone Number" class="profile-heading" keyboardType="number" />
-			<TextField text="{{ phoneNum }}" class="input" />
-
+		<!--	<TextField text="{{ phoneNum }}" class="input" hint="Phone number"/>-->
+              <Label/>
 			<Label text="Password" class="profile-heading" />
-			<TextField text="{{ pwd }}" secure="true" class="input" />
-
+		<!--	<TextField text="{{ pwd }}" secure="true" class="input" hint="Password"/>-->
+              <Label/>
       <Label text="Height (cm)" class="profile-heading" />
-      <TextField text="{{ height }}" secure="false" class="input" />
+    <!--  <TextField text="{{ height }}" secure="false" class="input" hint="Height"/>-->
+              <Label/>
   <Label text="Weight (kg)" class="profile-heading" />
-      <TextField text="{{ weight }}" secure="false" class="input" />
+     <!-- <TextField text="{{ weight }}" secure="false" class="input" hint="Weight" />-->
+              <Label/>
       <Label text="Goal weight (kg)" class="profile-heading" />
-      <TextField text="{{ goal }}" secure="false" class="input" />
-                
-                
-    
-      
+     <!-- <TextField text="{{ goal }}" secure="false" class="input" hint="Goal Weight" />-->
+              <Label/>               
+          
 		</StackLayout>
 			<StackLayout orientation="vertical" width="210" height="210">
         <Button text="View BMI" tap="bmiButton" class="button" />
-      	<Button text="Save" tap="{{ saveButton }}" class="button" />
-			</StackLayout>
+    			</StackLayout>
 		</StackLayout>
 	</ScrollView>
 </Page>

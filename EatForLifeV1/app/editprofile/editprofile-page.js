@@ -1,7 +1,5 @@
 var frameModule = require("ui/frame");
-var ProfileViewModel = require("./Profile-view-model");
-
-
+var EditprofileViewModel = require("./editprofile-view-model");
 
 var Sqlite = require("nativescript-sqlite");
 
@@ -13,7 +11,7 @@ function pageLoaded(args) {
     Sqlite.copyDatabase(db_name);
   }
     new Sqlite(db_name).then(db => {
-        page.bindingContext = ProfileViewModel(db);
+        page.bindingContext = EditprofileViewModel(db);
     });
 	}
 
@@ -22,12 +20,11 @@ function bmiButton(args){
   const page = button.page;
   page.frame.navigate("./demo-bmi/demo-bmi-page");
 }
-function onEdit(args) {
+
+function onSave(args) {
    
-    const button = args.object;
-    const page = button.page;
-    page.frame.navigate("./editprofile/editprofile-page");
+    alert("Saved");
 }
-exports.onEdit = onEdit;
+exports.onSave = onSave;
 exports.pageLoaded = pageLoaded;
 exports.bmiButton = bmiButton;
