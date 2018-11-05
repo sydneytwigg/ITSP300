@@ -4,6 +4,7 @@ var applicationSettingsModule = require("application-settings");
 const fromObjectRecursive = require("tns-core-modules/data/observable").fromObjectRecursive;
 var Sqlite = require("nativescript-sqlite");
 const topmost = require("tns-core-modules/ui/frame").topmost;
+var validator = require("email-validator");
 
 function EditprofileViewModel(db) {
     var viewModel = new Observable();
@@ -18,6 +19,7 @@ function EditprofileViewModel(db) {
             viewModel.set("email",rows[2]);
             viewModel.set("phoneNum",rows[3]);
             viewModel.set("pwd",rows[4]);
+            viewModel.set("pwdConfirm",row[4]);
             viewModel.set("height",rows[5]);
             viewModel.set("weight",rows[6]);
             viewModel.set("goal",rows[7]);
@@ -35,6 +37,16 @@ function EditprofileViewModel(db) {
         var height 		=   	viewModel.get("height");
         var weight 		=   	viewModel.get("weight");
         var goalKG 		=   	viewModel.get("goal");
+
+    if (name != null) {
+        if(surname != null){
+            if(validator.validate(newEmail) == true){
+                if(phone != null){
+                    if(pass != null){
+                        if(viewModel.get("pwd") = viewModel.get("pwdConfirm")){
+                            if(height != null){
+                                if(weight != null){
+                                    if(goalKG != null){
 
 
       db.execSQL("UPDATE client SET Name = ?, Surname = ?, Email = ?, PhoneNum = ?, Password = ?, Current_Weight = ?, Target_Weight = ? WHERE idClient = ?",[name,surname,newEmail,phone,pass,weight, goalKG, clientID]).then(id => {
@@ -54,6 +66,33 @@ function EditprofileViewModel(db) {
         });
 
         topmost().navigate({ moduleName: "./Profile/Profile-page"});
+    }else{
+        alert("Invalid Weight Goal");
+    }
+    }else{
+        alert("Invalid Weight");
+    }
+    }else{
+        alert("Invalid Height");
+    }
+    }else{
+        alert("Passwords do not match");
+    }
+    }else{
+        alert("Invalid Password")
+    }
+    }else{
+        alert("Invalid Phone Number");
+    }
+    }else{
+        alert("Invalid Email");
+    }
+    }else{
+        alert("Invalid Surname");
+    }
+     }else{
+        alert("Invalid Name");
+     }
 	}
 
     return viewModel;
