@@ -18,7 +18,7 @@
         <Label class="hr-light"/>
       </StackLayout>
       <StackLayout class="input-field">
-        <TextField id="weight" class="input" text="{{ weight }}" hint="Weight" secure="false" />
+        <TextField id="weight" class="input" text="{{ weight }}" hint="Weight (kg)" secure="false" />
         <Label class="hr-light"/>
       </StackLayout>
            <StackLayout class="input-field">
