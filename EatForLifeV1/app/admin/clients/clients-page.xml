@@ -7,10 +7,10 @@
       visibility="{{ isEditing ? 'visible' : 'collapse' }}"/>
 
     </ActionBar>
-    <ScrollView>
+   
         <StackLayout class="home-panel">
             <GridLayout columns="20,100,100,100" rows="40, 40,40" width="2000"
-                height="60" class="MyMealLabel">
+                height="60" class="MyMealLabel1">
                 <Label text="ID" row="0" col="1" />
                 <Label text="Name" row="0" col="2" />
                 <Label text="Surname" row="0" col="3" />
@@ -32,5 +32,5 @@
                 </ListView.itemTemplate>
             </ListView>
         </StackLayout>
-    </ScrollView>
+
 </Page>
