@@ -1,6 +1,8 @@
 <Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
 
   <ActionBar title="Change morning snack" class="action-bar">
+    <ActionItem ios.systemIcon="3" ios.position="left"
+     android.systemIcon="ic_menu_save" android.position="actionBar" tap="saveChanges"></ActionItem>
   </ActionBar>
   <ScrollView>
     <StackLayout class="home-panel">
@@ -11,9 +13,7 @@
       <ListPicker items="{{ listPicker2 }}" selectedIndex="{{ selectedListPickerIndex2 }}" />
       <Label text="Select third item:" class="l" />
       <ListPicker items="{{ listPicker3 }}" selectedIndex="{{ selectedListPickerIndex3 }}" />
-      <button class="MyMealActionButton" tap="saveChanges" text="Save"></button>
-
+      
     </StackLayout>
-    
-  </ScrollView>
+      </ScrollView>
 </Page>

@@ -6,9 +6,9 @@
     <StackLayout class="home-panel">
       <Label text="Select the meal you want to change" class="l" />
       <button class="MyMealActionButton" tap="breakfast" text="Breakfast"></button>
-      <button class="MyMealActionButton" tap="amsnack" text="Afternoon snack"></button>
+      <button class="MyMealActionButton" tap="amsnack" text="Morning snack"></button>
       <button class="MyMealActionButton" tap="lunch" text="Lunch"></button>
-      <button class="MyMealActionButton" tap="pmsnack" text="Midday snack"></button>
+      <button class="MyMealActionButton" tap="pmsnack" text="Afternoon  snack"></button>
       <button class="MyMealActionButton" tap="dinner" text="Dinner"></button>
     
     </StackLayout>
