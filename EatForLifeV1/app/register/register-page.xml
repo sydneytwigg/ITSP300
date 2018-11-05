@@ -1,56 +1,57 @@
-<Page loaded="pageLoaded" class="page" actionBarHidden="true" xmlns="http://www.nativescript.org/tns.xsd">
+<Page loaded="pageLoaded" class="login-page" actionBarHidden="true" xmlns="http://www.nativescript.org/tns.xsd">
 
-  <FlexboxLayout class="page">
-      <ScrollView class="contents">
-    <StackLayout class="form">
-      <Image class="logo" src="~/images/logo.png"/>
-      <Label class="header" text="EatForLife"/>
-<StackLayout class="input-field">
-        <TextField id="name" class="input" text="{{ name }}" hint="Name" secure="false" />
-        <Label class="hr-light"/>
-      </StackLayout>
-      <StackLayout class="input-field">
-        <TextField id="surname" class="input" text="{{ surname }}" hint="Surname" secure="false" />
-        <Label class="hr-light"/>
-      </StackLayout>
-           <StackLayout class="input-field">
-        <TextField id="Height" class="input" text="{{ height }}" hint="Height (m)" secure="false" />
-        <Label class="hr-light"/>
-      </StackLayout>
-      <StackLayout class="input-field">
-        <TextField id="weight" class="input" text="{{ weight }}" hint="Weight (kg)" secure="false" />
-        <Label class="hr-light"/>
-      </StackLayout>
-           <StackLayout class="input-field">
-        <TextField id="goal" class="input" text="{{ goal }}" hint="Weight goal (kg)" secure="false" />
-        <Label class="hr-light"/>
-      </StackLayout>
-        
-              <StackLayout class="input-field">
-        <TextField class="input" text="{{ email }}" hint="Email" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
-        <Label class="hr-light"/>
-      </StackLayout>
-        
-      <StackLayout class="input-field">
-        <TextField id="phoneNum" class="input" text="{{ phone }}" hint="Phone number" secure="false" />
-        <Label class="hr-light"/>
-      </StackLayout>
-        
-      <StackLayout class="input-field">
-        <TextField id="password" class="input" text="{{ password }}" hint="Password" secure="true" />
-        <Label class="hr-light"/>
-      </StackLayout>
-        
-     
-      <StackLayout class="input-field">
-        <TextField id="answer" class="input" text="{{ answer }}" hint="In what city were you born?" secure="false" />
-        <Label class="hr-light"/>
-      </StackLayout>
- 
+  <FlexboxLayout class="login-page">
+    <ScrollView>
+      <StackLayout class="login-form">
+        <Image class="register-logo" src="~/images/logo.png"/>
+        <Label class="login-header-label h1" text="EatForLife"/>
 
-   
+        <StackLayout class="input">
+          <TextField id="name" class="input input-login" text="{{ name }}" hint="Name" secure="false" />
+          <Label class="hr-light"/>
+      </StackLayout>
+      <StackLayout class="input">
+        <TextField id="surname" class="input input-login" text="{{ surname }}" hint="Surname" secure="false" />
+        <Label class="hr-light"/>
+      </StackLayout>
+           <StackLayout class="input">
+        <TextField id="Height" class="input input-login" text="{{ height }}" hint="Height (m)" secure="false" />
+        <Label class="hr-light"/>
+      </StackLayout>
+      <StackLayout class="input">
+        <TextField id="weight" class="input input-login" text="{{ weight }}" hint="Weight (kg)" secure="false" />
+        <Label class="hr-light"/>
+      </StackLayout>
+           <StackLayout class="input">
+        <TextField id="goal" class="input input-login" text="{{ goal }}" hint="Weight goal (kg)" secure="false" />
+        <Label class="hr-light"/>
+      </StackLayout>
 
-      <Button text="Register" tap=" {{ RegisterValidate }}"/>
+              <StackLayout class="input">
+        <TextField class="input input-login" text="{{ email }}" hint="Email" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
+        <Label class="hr-light"/>
+      </StackLayout>
+
+      <StackLayout class="input">
+        <TextField id="phoneNum" class="input input-login" text="{{ phone }}" hint="Phone number" secure="false" />
+        <Label class="hr-light"/>
+      </StackLayout>
+
+      <StackLayout class="input">
+        <TextField id="password" class="input input-login" text="{{ password }}" hint="Password" secure="true" />
+        <Label class="hr-light"/>
+      </StackLayout>
+
+
+      <StackLayout class="input">
+        <TextField id="answer" class="input input-login" text="{{ answer }}" hint="In what city were you born?" secure="false" />
+        <Label class="hr-light"/>
+      </StackLayout>
+
+
+
+
+      <Button text="Register" class="btn btn-login btn-rounded-lg btn-layout" tap=" {{ RegisterValidate }}"/>
     </StackLayout>
 
       </ScrollView>
