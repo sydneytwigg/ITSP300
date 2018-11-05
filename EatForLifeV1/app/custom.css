@@ -169,7 +169,7 @@ border-color: #f7941e;
   border-color: #FFFFFF;
   background-color: #e6e6e6;
   border-width: 1;
-  font-weight: bold;
+  /*font-weight: 400;*/
 }
 
 .btn-outline {
@@ -213,7 +213,7 @@ font-size: 18;
 }
 
 .input-login{
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .input-rounded {
