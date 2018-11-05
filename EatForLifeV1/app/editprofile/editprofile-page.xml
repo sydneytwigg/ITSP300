@@ -1,7 +1,7 @@
 <Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd" backgroundColor="white" pageLoaded="pageLoaded">
 
 	<ActionBar title="View Profile" class="action-bar">
-    <ActionItem ios.systemIcon="3" android.systemIcon="ic_menu_save"  tap="onSave"></ActionItem>
+    <ActionItem ios.systemIcon="3" android.systemIcon="ic_menu_save"  tap="{{ onSave }}"></ActionItem>
     
 	</ActionBar>
 	<ScrollView>
