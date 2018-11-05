@@ -16,7 +16,6 @@ function ProfileViewModel(db) {
             viewModel.set("surname", rows[1]);
             viewModel.set("email",rows[2]);
             viewModel.set("phoneNum",rows[3]);
-            viewModel.set("pwd",rows[4]);
             viewModel.set("height",rows[5]);
             viewModel.set("weight",rows[6]);
             viewModel.set("goal",rows[7]);
