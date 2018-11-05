@@ -9,6 +9,7 @@ function onNavigatingTo(args) {
     var txtName = view.getViewById(page, "contactName");
     var txtEmail = view.getViewById(page, "contactEmail");
     var txtMessage = view.getViewById(page, "contactMessage");
+    
 
     page.bindingContext = new ContactViewModel();
 }

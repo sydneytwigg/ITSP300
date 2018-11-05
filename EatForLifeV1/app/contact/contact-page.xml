@@ -10,10 +10,15 @@
             <Label text="Name" class="label" textWrap="true"></Label>
             <TextField id="contactName" hint="Name" text="{{ contactName }}" class="input input-border" autocorrect="false"></TextField>
         </StackLayout>
-        <StackLayout class="input-field">
+      <StackLayout class="input-field">
+        <Label text="Surname" class="label" textWrap="true"></Label>
+        <TextField id="contactSurname" hint="Surname" text="{{ contactSurname }}" class="input input-border" autocorrect="false"></TextField>
+      </StackLayout>
+     
+      <!--  <StackLayout class="input-field">
             <Label text="Email" class="label" textWrap="true"></Label>
             <TextField id="contactEmail" hint="Email" text="{{ contactEmail }}" class="input input-border" autocorrect="false"></TextField>
-        </StackLayout>
+        </StackLayout>-->
         <StackLayout class="input-field">
             <Label text="Message" class="label" textWrap="true"></Label>
             <TextField id="contactMessage" hint="Message" text="{{ contactMessage }}" class="input input-border" autocorrect="false"></TextField>
