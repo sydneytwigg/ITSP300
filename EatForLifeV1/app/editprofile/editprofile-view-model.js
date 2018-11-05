@@ -18,8 +18,9 @@ function EditprofileViewModel(db) {
             viewModel.set("surname", rows[1]);
             viewModel.set("email",rows[2]);
             viewModel.set("phoneNum",rows[3]);
-            viewModel.set("pwd",rows[4]);
-            viewModel.set("pwdConfirm",row[4]);
+        var pwddd = rows[4];
+            viewModel.set("pwd",pwddd);
+            viewModel.set("pwdConfirm",pwddd);
             viewModel.set("height",rows[5]);
             viewModel.set("weight",rows[6]);
             viewModel.set("goal",rows[7]);
@@ -43,7 +44,7 @@ function EditprofileViewModel(db) {
             if(validator.validate(newEmail) == true){
                 if(phone != null){
                     if(pass != null){
-                        if(viewModel.get("pwd") = viewModel.get("pwdConfirm")){
+                        if(viewModel.get("pwd") == viewModel.get("pwdConfirm")){
                             if(height != null){
                                 if(weight != null){
                                     if(goalKG != null){
