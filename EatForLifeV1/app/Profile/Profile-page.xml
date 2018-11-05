@@ -21,10 +21,7 @@
               
 			<Label text="Phone Number" class="profile-heading" keyboardType="number" />
 		<Label text="{{ phoneNum }}" class="input" hint="Phone number"/>
-           
-			<Label text="Password" class="profile-heading" />
-	<Label text="{{ pwd }}" secure="true" class="input" hint="Password"/>
-       
+                  
       <Label text="Height (cm)" class="profile-heading" />
   <Label text="{{ height }}" secure="false" class="input" hint="Height"/>
              
