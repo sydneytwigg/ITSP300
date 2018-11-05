@@ -1,4 +1,4 @@
-<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd"  xmlns:CheckBox="nativescript-checkbox" >
   <ActionBar title="Meals - Day 1"  class="action-bar">
     <ActionItem tap="onEdit" ios.systemIcon="2" android.systemIcon="ic_menu_edit" ios.position="right"
 visibility="{{ isEditing ? 'collapse' : 'visible' }}"/>
@@ -10,67 +10,104 @@ visibility="{{ isEditing ? 'collapse' : 'visible' }}"/>
 		<StackLayout class="MyStackLayout">
 			<Label text="The diet plan can be change according to your needs" class="l" />
 			<Label text="BREAKFAST" class="MyMealLabel" />
-
-
-			<GridLayout columns="200, 200,150" rows="40, 40, 40" width="500" height="120" backgroundColor="#f2f2f2">
-				<Label text="Item 1" row="0" col="0" class="MyTable" />
+			<GridLayout columns="150, 200,50" rows="40, 40, 40" width="500" height="120" backgroundColor="#f2f2f2">
+      
+        <Label text="Item 1" row="0" col="0" class="MyTable" />
 				<Label text="Measurement" row="0" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="0" col="2" />
+        
+  
 				<Label text="Item 2" row="1" col="0" class="MyTable" />
 				<Label text="Measurement" row="1" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="1" col="2" />
+
+
 				<Label text="Item 3" row="2" col="0" class="MyTable" />
 				<Label text="Measurement" row="2" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="2" col="2" />
+        
 			</GridLayout>
 			<Label></Label>
 
 			<Label text="MORNING SNACK" class="MyMealLabel" />
-			<GridLayout columns="200, 200,150" rows="40, 40, 40,40" width="500" height="160" backgroundColor="#f2f2f2">
+			<GridLayout columns="150, 200,50" rows="40, 40, 40,40" width="500" height="160" backgroundColor="#f2f2f2">
 				<Label text="Item 1" row="0" col="0" class="MyTable" />
 				<Label text="Measurement" row="0" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="0" col="2" />
+        
 				<Label text="Item 2" row="1" col="0" class="MyTable" />
 				<Label text="Measurement" row="1" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="1" col="2" />
+        
 				<Label text="Item 3" row="2" col="0" class="MyTable" />
 				<Label text="Measurement" row="2" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="2" col="2" />
+        
 				<Label text="Item 4" row="3" col="0" class="MyTable" />
 				<Label text="Measurement" row="3" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="3" col="2" />
 
 			</GridLayout>
 			<Label></Label>
 
 			<Label text="LUNCH" class="MyMealLabel" />
-			<GridLayout columns="200, 200,150" rows="40, 40, 40,40" width="500" height="160" backgroundColor="#f2f2f2">
-				<Label text="Item 1" row="0" col="0" class="MyTable" />
-				<Label text="Measurement" row="0" col="1" class="MyTable" />
-				<Label text="Item 2" row="1" col="0" class="MyTable" />
-				<Label text="Measurement" row="1" col="1" class="MyTable" />
-				<Label text="Item 3" row="2" col="0" class="MyTable" />
-				<Label text="Measurement" row="2" col="1" class="MyTable" />
-				<Label text="Item 4" row="3" col="0" class="MyTable" />
-				<Label text="Measurement" row="3" col="1" class="MyTable" />
-			</GridLayout>
+      <GridLayout columns="150, 200,50" rows="40, 40, 40,40" width="500" height="160" backgroundColor="#f2f2f2">
+        <Label text="Item 1" row="0" col="0" class="MyTable" />
+        <Label text="Measurement" row="0" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="0" col="2" />
+
+        <Label text="Item 2" row="1" col="0" class="MyTable" />
+        <Label text="Measurement" row="1" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="1" col="2" />
+
+        <Label text="Item 3" row="2" col="0" class="MyTable" />
+        <Label text="Measurement" row="2" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="2" col="2" />
+
+        <Label text="Item 4" row="3" col="0" class="MyTable" />
+        <Label text="Measurement" row="3" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="3" col="2" />
+
+      </GridLayout>
 			<Label></Label>
 
 			<Label text="AFTERNOON SNACK" class="MyMealLabel" />
-			<GridLayout columns="200, 200,150" rows="40, 40" width="500" height="80" backgroundColor="#f2f2f2">
-				<Label text="Item 1" row="0" col="0" class="MyTable" />
-				<Label text="Measurement" row="0" col="1" class="MyTable" />
-				<Label text="Item 2" row="1" col="0" class="MyTable" />
-				<Label text="Measurement" row="1" col="1" class="MyTable" />
+      <GridLayout columns="150, 200,50" rows="40, 40, 40,40" width="500" height="160" backgroundColor="#f2f2f2">
+        <Label text="Item 1" row="0" col="0" class="MyTable" />
+        <Label text="Measurement" row="0" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="0" col="2" />
 
-			</GridLayout>
+        <Label text="Item 2" row="1" col="0" class="MyTable" />
+        <Label text="Measurement" row="1" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="1" col="2" />
+
+
+      </GridLayout>
 			<Label></Label>
 			<Label text="SUPPER" class="MyMealLabel" />
-			<GridLayout columns="200, 200,150" rows="40, 40, 40,40,40" width="500" height="200" backgroundColor="#f2f2f2">
-				<Label text="Item 1" row="0" col="0" class="MyTable" />
-				<Label text="Measurement" row="0" col="1" class="MyTable" />
-				<Label text="Item 2" row="1" col="0" class="MyTable" />
-				<Label text="Measurement" row="1" col="1" class="MyTable" />
-				<Label text="Item 3" row="2" col="0" class="MyTable" />
-				<Label text="Measurement" row="2" col="1" class="MyTable" />
-				<Label text="Item 4" row="3" col="0" class="MyTable" />
-				<Label text="Measurement" row="3" col="1" class="MyTable" />
-				<Label text="Item 5" row="4" col="0" class="MyTable" />
-				<Label text="Measurement" row="4" col="1" class="MyTable" />
-			</GridLayout>
+      <GridLayout columns="150, 200,50" rows="40, 40, 40,40" width="500" height="160" backgroundColor="#f2f2f2">
+        <Label text="Item 1" row="0" col="0" class="MyTable" />
+        <Label text="Measurement" row="0" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="0" col="2" />
+
+        <Label text="Item 2" row="1" col="0" class="MyTable" />
+        <Label text="Measurement" row="1" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="1" col="2" />
+
+        <Label text="Item 3" row="2" col="0" class="MyTable" />
+        <Label text="Measurement" row="2" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="2" col="2" />
+
+        <Label text="Item 4" row="3" col="0" class="MyTable" />
+        <Label text="Measurement" row="3" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="3" col="2" />
+        
+        <Label text="Item 5" row="4" col="0" class="MyTable" />
+        <Label text="Measurement" row="4" col="1" class="MyTable" />
+        <CheckBox:CheckBox text="" checked="false"  row="4" col="2" />
+
+      </GridLayout>
+      <Label></Label>
 			<button class="MyMealActionButton" text="Change Diet Prefrences" tap="change"></button>
 		
 			<Label/>
