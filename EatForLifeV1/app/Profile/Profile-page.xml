@@ -22,7 +22,7 @@
 			<Label text="Phone Number" class="profile-heading" keyboardType="number" />
 		<Label text="{{ phoneNum }}" class="input" hint="Phone number"/>
                   
-      <Label text="Height (cm)" class="profile-heading" />
+      <Label text="Height (m)" class="profile-heading" />
   <Label text="{{ height }}" secure="false" class="input" hint="Height"/>
              
   <Label text="Weight (kg)" class="profile-heading" />
