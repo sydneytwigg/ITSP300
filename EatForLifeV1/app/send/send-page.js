@@ -12,10 +12,10 @@ function send(args) {
     var validator = require("email-validator");
     var emailaddress = sendViewModel.get("password");
     const button = args.object;
-    const page = button.page;
+    const page = button.page; 
+    
     if (validator.validate(emailaddress) == true) {
        
-
     var email = require("nativescript-email");
 
         //check availability
@@ -27,13 +27,19 @@ function send(args) {
 
         var fs = require("file-system");
         var appPath = fs.knownFolders.currentApp().path;
-        // var logoPath = "C:/Users/andre/Desktop/Extract/app/App_Resources/Android\dowload.jpg";
+        var logoPath = appPath + "/images/diet.pdf";
 
         email.compose({
             subject: "EatForLife Diet plan",
             body: "This is your personal EatForLife diet plan. ",
             to: [emailaddress],
-
+           attachments: [
+                {
+                    fileName: 'diet.pdf',
+                    path: logoPath,
+                    mimeType: 'png'
+                },
+               ]
         }).then(
             function () {
                 console.log("Email composer closed");

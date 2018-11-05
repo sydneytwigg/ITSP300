@@ -1,6 +1,6 @@
 var observableModule = require("tns-core-modules/data/observable");
 
-function sendViewModel() {
+function ContactViewModel() {
     var viewModel = observableModule.fromObject({
 
     });
@@ -8,4 +8,4 @@ function sendViewModel() {
     return viewModel;
 }
 
-module.exports = sendViewModel;
+module.exports = ContactViewModel;
