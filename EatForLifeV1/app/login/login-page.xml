@@ -5,13 +5,13 @@
       <Image class="logo" src="~/images/logo.png"/>
       <Label class="login-header-label h1" text="EatForLife"/>
 
-      <StackLayout class="input-field">
-        <TextField class="input" text="{{ email }}" hint="Email" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
+      <StackLayout class="input">
+        <TextField class="input input-login" text="{{ email }}" hint="Email" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
         <Label class="hr-light"/>
       </StackLayout>
 
-      <StackLayout class="input-field">
-        <TextField id="password" class="input" text="{{ password }}" hint="Password" secure="true" />
+      <StackLayout class="input">
+        <TextField id="password" class="input input-login" text="{{ password }}" hint="Password" secure="true" />
         <Label class="hr-light"/>
       </StackLayout>
 
@@ -19,7 +19,7 @@
       <Button text="Sign in" class="btn btn-login btn-rounded-lg btn-layout" tap="{{ LoginValidate }}"/>
       <Button text="Register" class="btn btn-login btn-rounded-lg btn-layout" tap="Register"/>
       <Button text="Forgot password" class="btn btn-login btn-rounded-lg btn-layout" tap="forgotPassword"/>
-      <Button text="Admin panel" class="btn btn-login btn-rounded-lg btn-layout" tap="admin"/>
+      <Button text="Admin Login" class="btn btn-login btn-rounded-lg btn-layout" tap="admin"/>
     </StackLayout>
   </StackLayout>
 

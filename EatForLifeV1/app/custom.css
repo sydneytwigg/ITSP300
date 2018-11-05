@@ -14,6 +14,8 @@ background-color: #f7941e;
   flex-direction: column;
   background-color: #FFFFFF;
   padding: 10;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 
@@ -207,7 +209,11 @@ font-size: 16;
 }
 
 .input {
-font-size: 14;
+font-size: 18;
+}
+
+.input-login{
+  color: #FFFFFF;
 }
 
 .input-rounded {
