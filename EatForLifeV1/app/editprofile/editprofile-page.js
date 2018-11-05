@@ -21,10 +21,6 @@ function bmiButton(args){
   page.frame.navigate("./demo-bmi/demo-bmi-page");
 }
 
-function onSave(args) {
-   
-    alert("Saved");
-}
-exports.onSave = onSave;
+
 exports.pageLoaded = pageLoaded;
 exports.bmiButton = bmiButton;
