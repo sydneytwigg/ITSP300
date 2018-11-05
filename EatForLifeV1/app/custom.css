@@ -9,12 +9,19 @@ background-color: #f7941e;
 }
 
 .page {
-
   margin: 5px;
   align-items: center;
   flex-direction: column;
   background-color: #FFFFFF;
   padding: 10;
+}
+
+
+.form {
+  margin-left: 30;
+  margin-right: 30;
+  flex-grow: 2;
+  vertical-align: middle;
 }
 
 .contents{
@@ -153,6 +160,14 @@ color: #ffffff;
 
 .btn-outline {
 border-color: #f7941e;
+}
+
+.btn-login{
+  color: #1a1a1a;
+  border-color: #FFFFFF;
+  background-color: #e6e6e6;
+  border-width: 1;
+  font-weight: bold;
 }
 
 .btn-outline {

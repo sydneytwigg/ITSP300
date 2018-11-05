@@ -1,6 +1,6 @@
-// Place any CSS rules you want to apply on both iOS and Android here.
-// This is where the vast majority of your CSS code goes.
-// Font icon class
+// Import custom css file
+@import '~/custom.css'; /* this downloaded theme */
+
 
 .fa {
   font-family: "FontAwesome";

@@ -1,5 +1,5 @@
 @import url(~/platform.css);
-@import '~nativescript-theme-core/css/core.light.css';
+/*@import '~nativescript-theme-core/css/core.light.css';
 	@import '~/custom.css'; /* this downloaded theme */
 
 .page {
@@ -23,7 +23,7 @@
 
 .logo {
   margin-bottom: 12;
-  height: 90;
+  height: 30px;
   font-weight: bold;
 }
 
