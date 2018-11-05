@@ -3,8 +3,7 @@
     <ActionBar title="Registered clients" class="action-bar">
         <ActionItem tap="onEdit" ios.systemIcon="1" android.systemIcon="ic_menu_share"
             ios.position="right" visibility="{{ isEditing ? 'collapse' : 'visible' }}" />
-        <ActionItem tap="onSave" ios.systemIcon="3" android.systemIcon="ic_menu_save"
-            ios.position="right" visibility="{{ isEditing ? 'visible' : 'collapse' }}" />
+       
 
     </ActionBar>
 
