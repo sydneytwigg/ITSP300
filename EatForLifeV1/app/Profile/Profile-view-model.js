@@ -14,7 +14,12 @@ function ProfileViewModel(db) {
     db.get("SELECT * FROM client WHERE Email = ?",[email]).then(rows => {
             viewModel.set("name",rows[10]);
             viewModel.set("surname", rows[11]);
+            viewModel.set("email",rows[13]);
             viewModel.set("phoneNum",rows[12]);
+            viewModel.set("pwd",rows[14]);
+//            viewModel.set("height",rows[]);
+            viewModel.set("weight",rows[15]);
+            viewModel.set("goal",rows[16]);
 
         }, error => {
             alert("SELECT ERROR", error);
