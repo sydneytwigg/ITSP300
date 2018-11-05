@@ -8,7 +8,12 @@ var applicationSettingsModule = require("application-settings");
 function LoginViewModel(db) {
     var viewModel = new Observable();
 
-    applicationSettingsModule.getString("EFL","");
+    applicationSettingsModule.getString("EFL-user","");
+    applicationSettingsModule.getString("EFL-ID","");
+    applicationSettingsModule.getString("EFL-mealPlan","");
+    applicationSettingsModule.getString("EFL-overview","");
+    
+
   viewModel.LoginValidate = function (args) {
 
     var emailVal = viewModel.get("email");
@@ -16,8 +21,8 @@ function LoginViewModel(db) {
 
 
     if (validator.validate(emailVal) == true) {
-        if (password != null) {
-
+        if (password != null) {          
+            
 			db.get("SELECT * FROM client WHERE Email = ? AND Password = ?",[emailVal, password]).then(rows => {
                 if (rows != null) {
                     alert("Login Successful");
@@ -25,8 +30,11 @@ function LoginViewModel(db) {
                     const button = args.object;
                     const page = button.page;
                     applicationSettingsModule.setString("EFL-user",emailVal);
-                    //page.frame.navigate("./home/home-items-page");
-                    application.run({ moduleName: "app-root" });
+                    applicationSettingsModule.setString("EFL-ID",rows[0]);
+              //      applicationSettingsModule.setString("EFL-mealPlan",rows[2]);
+                    applicationSettingsModule.setString("EFL-overview",rows[5]);
+                    
+                    page.frame.navigate("./mealplan-overview/mealplan-overview-page");
                 }else{
                     alert("Incorrect Email or Password!");
                 }
