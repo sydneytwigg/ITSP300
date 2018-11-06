@@ -56,3 +56,9 @@
   width: 300;
   margin: 10 5 10 5;
 }
+
+.layout-center{
+  align-content: center;
+  horizontal-align: center;
+  margin: 5 5 5 5;
+}
