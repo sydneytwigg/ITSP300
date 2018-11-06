@@ -1,8 +1,22 @@
 <Page loaded="onNavigatingTo" class="page" xmlns="http://www.nativescript.org/tns.xsd" backgroundColor="white">
 
-	<ActionBar title="Home" class="action-bar">
-		<Label class="action-bar-title h3" text="Home"></Label>
+	<ActionBar title="Home" class="action-bar" >
+    <Label class="action-bar-title h3" text="Home"></Label>
+  
+      <Label  class="action-bar-title h3"  text="Home"></Label>
+     
+  
+
+   <!--<StackLayout  orientation="horizontal" ios:horizontalAlignment="center"
+    android:horizontalAlignment="right">
+     
+      <Label text="Home                      "  class="action-bar-title h3"  ></Label>
+ <Image class="l" src="~/images/logout1.png" tap="goBack"/>
+      <Label text="      "   ></Label>
+    </StackLayout>-->
+    
 	</ActionBar>
+  
 	<ScrollView class="contents">
 		<FlexboxLayout flexDirection="column" class="body">
       <Label text=" " />

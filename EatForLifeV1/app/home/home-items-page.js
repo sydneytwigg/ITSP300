@@ -15,5 +15,8 @@ function onNavigatingTo(args) {
 
 
 }
-
+function goBack() {
+    alert("y");
+}
+exports.goBack = goBack;
 exports.onNavigatingTo = onNavigatingTo;
