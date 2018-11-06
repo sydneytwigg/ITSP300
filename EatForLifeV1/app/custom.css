@@ -150,6 +150,8 @@ background-color: #c77f2a;
 
 .page label.text-muted, .tab-view label.text-muted {
 color: #a2a2a2;
+font-size: 18;
+word-wrap: break-word;
 }
 
 .btn {

@@ -1,52 +1,54 @@
 <Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
 
-    <ActionBar title="Register admin" class="action-bar">
+    <ActionBar class="action-bar">
+      <Label class="action-bar-title h3" text="Add Admin User"></Label>
     </ActionBar>
-    <ScrollView>
-        <StackLayout class="home-panel">
-            <StackLayout class="input-field">
-                <TextField id="name" class="input" text="{{ name }}" hint="Name"
-                    secure="false" />
-                <Label class="hr-light" />
-            </StackLayout>
-            <StackLayout class="input-field">
-                <TextField id="surname" class="input" text="{{ surname }}"
-                    hint="Surname" secure="false" />
-                <Label class="hr-light" />
-            </StackLayout>
-        
-      
 
-            <StackLayout class="input-field">
-                <TextField class="input" text="{{ email }}" hint="Email"
-                    keyboardType="email" autocorrect="false"
-                    autocapitalizationType="none" />
-                <Label class="hr-light" />
-            </StackLayout>
+    <ScrollView class="contents">
+      <StackLayout class="body">
+        <Label text=" "/>
+        <Label text="Add a new admin user." class="text-muted" />
+        <Label text=" "/>
 
-            <StackLayout class="input-field">
+        <StackLayout class="input-field">
+          <TextField id="name" class="input" text="{{ name }}" hint="Name"
+            secure="false" />
+            <Label class="hr-light" />
+        </StackLayout>
+
+        <StackLayout class="input-field">
+            <TextField id="surname" class="input" text="{{ surname }}"
+              hint="Surname" secure="false" />
+              <Label class="hr-light" />
+        </StackLayout>
+
+        <StackLayout class="input-field">
+              <TextField class="input" text="{{ email }}" hint="Email"
+                keyboardType="email" autocorrect="false"
+                autocapitalizationType="none" />
+                <Label class="hr-light" />
+              </StackLayout>
+
+              <StackLayout class="input-field">
                 <TextField id="phoneNum" class="input" text="{{ phone }}"
-                    hint="Phone number" secure="false" />
-                <Label class="hr-light" />
-            </StackLayout>
+                  hint="Phone number" secure="false" />
+                  <Label class="hr-light" />
+                </StackLayout>
 
-            <StackLayout class="input-field">
-                <TextField id="password" class="input" text="{{ password }}"
+                <StackLayout class="input-field">
+                  <TextField id="password" class="input" text="{{ password }}"
                     hint="Password" secure="true" />
-                <Label class="hr-light" />
-            </StackLayout>
+                    <Label class="hr-light" />
+                  </StackLayout>
 
 
-            <StackLayout class="input-field">
-                <TextField id="answer" class="input" text="{{ answer }}" hint="In what city were you born?"
-                    secure="false" />
-                <Label class="hr-light" />
-            </StackLayout>
+                  <StackLayout class="input-field">
+                    <TextField id="answer" class="input" text="{{ answer }}" hint="In what city were you born?"
+                      secure="false" />
+                      <Label class="hr-light" />
+                    </StackLayout>
 
-
-
-
-            <Button text="Register" tap="RegisterValidate" />
+            <Button text="Add User" class="btn btn-primary btn-rounded-lg btn-layout" tap="RegisterValidate" />
         </StackLayout>
     </ScrollView>
 </Page>
