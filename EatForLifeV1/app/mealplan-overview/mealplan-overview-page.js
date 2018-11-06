@@ -62,9 +62,10 @@ function btnViewMealD7(args){
 }
 
 function btnPrint(args) {
-    const button = args.object;
-    const page = button.page;
-    page.frame.navigate("./print/print-page")
+   // const button = args.object;
+    //const page = button.page;
+   // page.frame.navigate("./print/print-page")
+  alert("downloaded");
 }
 
 function btnLogin(args) {
