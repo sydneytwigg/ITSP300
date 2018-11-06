@@ -62,3 +62,8 @@
   horizontal-align: center;
   margin: 5 5 5 5;
 }
+
+.profile-label{
+  font-size: 20;
+  font-weight: 300 ;
+}

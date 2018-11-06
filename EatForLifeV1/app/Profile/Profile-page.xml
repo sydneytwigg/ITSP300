@@ -1,41 +1,47 @@
 <Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd" backgroundColor="white" pageLoaded="pageLoaded">
 
-	<ActionBar title="View Profile" class="action-bar">
+	<ActionBar class="action-bar">
+		<Label class="action-bar-title h3" text="Profile"></Label>
+
     <ActionItem tap="onEdit" ios.systemIcon="2" android.systemIcon="ic_menu_edit" ios.position="right"
     visibility="{{ isEditing ? 'collapse' : 'visible' }}"/>
 	</ActionBar>
-	<ScrollView>
-		<StackLayout class="home-panel2">
+	<ScrollView class="contents">
+    <StackLayout class="body">
+      <Label text=" "/>
+      <Label text="This is your personal information" class="text-muted" />
+			<Label text=" "/>
 
-      <Label text="This is your personal information" class="l" />
-            <StackLayout margin-top="20">
-		
-		<Label text="Name" class="profile-heading" />
-              	<Label text="{{ name }}" class="input" hint="Name"/>
-              
-			<Label text="Surname" class="profile-heading" />
-		<Label text="{{ surname }}" class="input" hint="Surname" />
-              
-			<Label text="Email" class="profile-heading" />
-		<Label text="{{ email }}" class="input" hint="Email address"/>
-              
-			<Label text="Phone Number" class="profile-heading" keyboardType="number" />
-		<Label text="{{ phoneNum }}" class="input" hint="Phone number"/>
-                  
-      <Label text="Height (m)" class="profile-heading" />
-  <Label text="{{ height }}" secure="false" class="input" hint="Height"/>
-             
-  <Label text="Weight (kg)" class="profile-heading" />
-      <Label text="{{ weight }}" secure="false" class="input" hint="Weight" />
-          
-      <Label text="Goal weight (kg)" class="profile-heading" />
-     <Label text="{{ goal }}" secure="false" class="input" hint="Goal Weight" />
-                        
-          
-		</StackLayout>
-			<StackLayout orientation="vertical" width="210" height="210">
-        <Button text="View BMI" tap="bmiButton" class="button" />
-    			</StackLayout>
+				<StackLayout margin-top="20">
+					<Label text="Name" class="segmented-bar h3" />
+		      <Label text="{{ name }}" class="text-primary profile-label" hint="Name"/>
+					<Label text=" "/>
+
+					<Label text="Surname" class="segmented-bar h3" />
+					<Label text="{{ surname }}" class="text-primary profile-label" hint="Surname" />
+					<Label text=" "/>
+
+					<Label text="Email" class="segmented-bar h3" />
+					<Label text="{{ email }}" class="text-primary profile-label" hint="Email address"/>
+					<Label text=" "/>
+
+					<Label text="Phone Number" class="segmented-bar h3" keyboardType="number" />
+					<Label text="{{ phoneNum }}" class="text-primary profile-label" hint="Phone number"/>
+					<Label text=" "/>
+
+		      <Label text="Height (m)" class="segmented-bar h3" />
+		  		<Label text="{{ height }}" secure="false" class="text-primary profile-label" hint="Height"/>
+					<Label text=" "/>
+
+		  		<Label text="Weight (kg)" class="segmented-bar h3" />
+		      <Label text="{{ weight }}" secure="false" class="text-primary profile-label" hint="Weight" />
+					<Label text=" "/>
+
+		      <Label text="Goal Weight (kg)" class="segmented-bar h3" />
+		     	<Label text="{{ goal }}" secure="false" class="text-primary profile-label" hint="Goal Weight" />
+					<Label text=" "/>
+
+			</StackLayout>
 		</StackLayout>
 	</ScrollView>
 </Page>
