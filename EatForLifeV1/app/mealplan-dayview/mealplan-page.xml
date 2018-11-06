@@ -44,9 +44,6 @@ visibility="{{ isEditing ? 'collapse' : 'visible' }}"/>
   				<Label text="Measurement" row="2" col="1"   />
           <CheckBox:CheckBox text="" checked="false"  row="2" col="2" />
 
-  				<Label text="Item 4" row="3" col="0"   />
-  				<Label text="Measurement" row="3" col="1"   />
-          <CheckBox:CheckBox text="" checked="false"  row="3" col="2" />
 
   			</GridLayout>
   			<Label></Label>
@@ -65,10 +62,7 @@ visibility="{{ isEditing ? 'collapse' : 'visible' }}"/>
           <Label text="Measurement" row="2" col="1"   />
           <CheckBox:CheckBox text="" checked="false"  row="2" col="2" />
 
-          <Label text="Item 4" row="3" col="0"   />
-          <Label text="Measurement" row="3" col="1"   />
-          <CheckBox:CheckBox text="" checked="false"  row="3" col="2" />
-
+      
         </GridLayout>
   			<Label></Label>
 
@@ -82,6 +76,9 @@ visibility="{{ isEditing ? 'collapse' : 'visible' }}"/>
           <Label text="Measurement" row="1" col="1"   />
           <CheckBox:CheckBox text="" checked="false"  row="1" col="2" />
 
+     <Label text="Item 4" row="3" col="0"   />
+          <Label text="Measurement" row="3" col="1"   />
+          <CheckBox:CheckBox text="" checked="false"  row="3" col="2" />
 
         </GridLayout>
   			<Label></Label>
@@ -99,18 +96,10 @@ visibility="{{ isEditing ? 'collapse' : 'visible' }}"/>
           <Label text="Measurement" row="2" col="1"   />
           <CheckBox:CheckBox text="" checked="false"  row="2" col="2" />
 
-          <Label text="Item 4" row="3" col="0"   />
-          <Label text="Measurement" row="3" col="1"   />
-          <CheckBox:CheckBox text="" checked="false"  row="3" col="2" />
-
-          <Label text="Item 5" row="4" col="0"   />
-          <Label text="Measurement" row="4" col="1"   />
-          <CheckBox:CheckBox text="" checked="false"  row="4" col="2" />
-
+  
         </GridLayout>
         <Label></Label>
-  			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" text="Change Diet Prefrences" tap="change"></button>
-
+  		
   			<Label/>
   		</StackLayout>
   	</ScrollView>
