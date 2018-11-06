@@ -4,6 +4,7 @@
 		<Label class="action-bar-title h3" text="Edit Profile"></Label>
     <ActionItem ios.systemIcon="3" android.systemIcon="ic_menu_save"  tap="{{ onSave }}"></ActionItem>
 	</ActionBar>
+
 	<ScrollView class="contents">
     <StackLayout class="body">
 			<StackLayout margin-top="20">
@@ -42,7 +43,6 @@
       		<Label text="Goal weight (kg)" class="segmented-bar h3" />
      			<TextField text="{{ goal }}" secure="false" class="input" hint="Goal Weight" />
 					<Label text=" "/>
-
 				</StackLayout>
 		</StackLayout>
 	</ScrollView>
