@@ -1,6 +1,6 @@
 <Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
 
-    <ActionBar title="Registered clients" class="action-bar">
+    <ActionBar title="Shopping list" class="action-bar">
         <ActionItem tap="onEdit" ios.systemIcon="1" android.systemIcon="ic_menu_share"
             ios.position="right" visibility="{{ isEditing ? 'collapse' : 'visible' }}" />
        
