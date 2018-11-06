@@ -13,7 +13,7 @@ function pageLoaded(args) {
 if(login != null){
   page.bindingContext = mealplanViewModel;
 }else{
-  applicationSettingsModule.setString("EFL-login","./mealplan-dayview/mealplan-page");
+  applicationSettingsModule.setString("EFL-login","./mealplan-overview/mealplan-overview-page");
   topmost().navigate({ moduleName: "./login/login-page"});
 }
 }
