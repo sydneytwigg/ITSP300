@@ -13,8 +13,8 @@ function HomeViewModel(db) {
       { Date: "01/08/2018", Weight: 87 },
       { Date: "28/09/2018", Weight: 86 }
     ];
-    
-    viewModel.progressValue = 80;
+
+    viewModel.progressValue = 30;
 
   db.get("SELECT * FROM client").then(rows => {
             var welcome = "Welcome, "+ rows[10];
@@ -23,7 +23,6 @@ function HomeViewModel(db) {
             viewModel.set("currWeight", rows[11]);
             viewModel.set("lostWeight",rows[12]);
             viewModel.set("bmi",rows[13]);
-            alert("It's working");
         }, error => {
             alert("SELECT ERROR", error);
         });
