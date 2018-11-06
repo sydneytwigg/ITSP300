@@ -27,7 +27,7 @@ function send(args) {
 
         var fs = require("file-system");
         var appPath = fs.knownFolders.currentApp().path;
-        var logoPath = appPath + "/images/diet.pdf";
+        var logoPath = appPath + "/images/diet.png";
 
         email.compose({
             subject: "EatForLife Diet plan",
@@ -35,7 +35,7 @@ function send(args) {
             to: [emailaddress],
            attachments: [
                 {
-                    fileName: 'diet.pdf',
+                   fileName: 'diet.png',
                     path: logoPath,
                     mimeType: 'png'
                 },
