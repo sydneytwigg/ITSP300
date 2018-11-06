@@ -50,3 +50,9 @@
   width: 800px;
   height: 800px;
 }
+
+.btn-layout-mp{
+  height: 40;
+  width: 300;
+  margin: 10 5 10 5;
+}
