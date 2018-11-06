@@ -13,7 +13,7 @@
 			<Label text="Select a day to view" class="segmented-bar h3" />
 			<Label text=" "/>
 
-			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMeal" text="Day 1">Day 1</button>
+			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMealD1" text="Day 1">Day 1</button>
 			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMeal" text="Day 2">Day 2</button>
 			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMeal" text="Day 3">Day 3</button>
 			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMeal" text="Day 4">Day 4</button>
