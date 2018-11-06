@@ -1,37 +1,29 @@
 <Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
 
-    <ActionBar title="Shopping list" class="action-bar">
-        <ActionItem tap="onEdit" ios.systemIcon="1" android.systemIcon="ic_menu_share"
-            ios.position="right" visibility="{{ isEditing ? 'collapse' : 'visible' }}" />
-       
-
+    <ActionBar class="action-bar">
+      <Label class="action-bar-title h3" text="Shopping List"></Label>
+      <ActionItem tap="onEdit" ios.systemIcon="1" android.systemIcon="ic_menu_share"
+        ios.position="right" visibility="{{ isEditing ? 'collapse' : 'visible' }}" />
     </ActionBar>
 
+    <ScrollView class="contents">
+      <StackLayout class="body">
+        <Label text=" "/>
+        <GridLayout columns="25,200,150" rows="30, 30,30" width="2000" height="60" class="h3">
+          <Label text="Items" row="0" col="1" />
+          <Label text="Measurment" row="0" col="2" />
+        </GridLayout>
 
-        <StackLayout class="home-panel">
-          <GridLayout columns="25,200,150" rows="30, 30,30" width="2000"
-   height="60" class="MyMealLabel1">
-            <Label text="Items" row="0" col="1" />
-            <Label text="Measurment" row="0" col="2" />
-          </GridLayout>
-            <ListView class="list-group" items="{{ countries }}" itemTap="{{ onItemTap }}"
-                style="height:1250px">
-             
-                <ListView.itemTemplate>
-                    <FlexboxLayout flexDirection="row" class="list-group-item">
-                        <GridLayout columns="0,200,150" rows="40, 40,40" width="2000"
-                            height="60" class="MyMealLabel1">
-                            <Label text="{{ name }}" class="list-group-item-heading"
-                                verticalAlignment="center" style="width: 60%"
-                                row="0" col="1" />
-                            <Label text="{{  measurment }}" class="list-group-item-heading"
-                                verticalAlignment="center" style="width: 60%"
-                                row="0" col="2" />
-                        </GridLayout>
-                    </FlexboxLayout>
-                </ListView.itemTemplate>
-            </ListView>
-
-        </StackLayout>
-    
+        <ListView class="list-group" items="{{ countries }}" itemTap="{{ onItemTap }}" style="height:1250px">
+          <ListView.itemTemplate>
+              <FlexboxLayout flexDirection="row" class="list-group-item">
+                  <GridLayout columns="0,200,150" rows="40, 40,40" width="2000" height="60" class="MyMealLabel1">
+                      <Label text="{{ name }}" class="list-group-item-heading" verticalAlignment="center" style="width: 60%" row="0" col="1" />
+                      <Label text="{{  measurment }}" class="list-group-item-heading" verticalAlignment="center" style="width: 60%" row="0" col="2" />
+                  </GridLayout>
+              </FlexboxLayout>
+          </ListView.itemTemplate>
+        </ListView>
+      </StackLayout>
+    </ScrollView>
 </Page>
