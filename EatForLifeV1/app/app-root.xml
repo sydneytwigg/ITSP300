@@ -26,6 +26,8 @@ http://docs.nativescript.org/cookbook/ui/tab-view
     <TabViewItem title="Contact" ios:iconSource="res://tabIcons/chat_s" android:iconSource="res://chat_s">
         <Frame defaultPage="contact/contact-page"></Frame>
     </TabViewItem>
-
+  <TabViewItem title="Logout" ios:iconSource="res://tabIcons/chat_s" android:iconSource="~/images/logout.png" tap="logoutBtn">
+    <Frame defaultPage="login/login-page"></Frame>
+  </TabViewItem>
 
 </TabView>
