@@ -32,8 +32,8 @@ function LoginViewModel(db) {
                     const page = button.page;
                     applicationSettingsModule.setString("EFL-user",emailVal);
                     applicationSettingsModule.setString("EFL-ID",rows[0]);
-              //      applicationSettingsModule.setString("EFL-mealPlan",rows[2]);
-                    applicationSettingsModule.setString("EFL-overview",rows[5]);
+                    applicationSettingsModule.setString("EFL-mealPlan",rows[2]);
+                    applicationSettingsModule.setString("EFL-overview",rows[3]);
                     topmost().navigate({ moduleName: applicationSettingsModule.getString("EFL-login")});
                 }else{
                     alert("Incorrect Email or Password!");
