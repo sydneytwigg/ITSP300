@@ -5,7 +5,7 @@ var applicationSettingsModule = require("application-settings");
 function ShoppinglistViewModel(db) {
    var viewModel = new Observable();
 
-  viewModel.countries = [];
+  viewModel.items = [];
 
     var mealPlan = applicationSettingsModule.getString("EFL-mealPlan");
 
@@ -28,9 +28,9 @@ db.execSQL("delete from itemList").then(id => {
 
 
             rows.forEach((w) => {
-            viewModel.countries.push({ 
-                  name: rows[0], 
-                 measurment: rows[1]
+            viewModel.items.push({ 
+                  name: w[0], 
+                 measurment: w[1]
                 });
 
             });
