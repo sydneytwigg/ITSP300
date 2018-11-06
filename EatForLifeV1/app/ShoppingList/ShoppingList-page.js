@@ -1,5 +1,5 @@
 var frameModule = require("tns-core-modules/ui/frame");
-var ShoppinglistViewModel = require("./ShoppingList-view-model");
+var ShoppinglistViewModel = require("./shoppinglist-view-model");
 
 var shoppinglistViewModel = new ShoppinglistViewModel();
 
