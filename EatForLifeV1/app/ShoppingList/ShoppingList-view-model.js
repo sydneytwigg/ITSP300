@@ -30,7 +30,7 @@ db.execSQL("delete from itemList").then(id => {
             rows.forEach((w) => {
             viewModel.items.push({ 
                   name: w[0], 
-                 measurment: w[1]
+                 measurement: w[1]
                 });
 
             });
