@@ -1,41 +1,52 @@
 <Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd"
     backgroundColor="white" pageLoaded="pageLoaded">
 
-    <ActionBar title="Client Detail" class="action-bar">
+    <ActionBar class="action-bar">
+      <Label class="action-bar-title h3" text="Client Details"></Label>
     </ActionBar>
-    <ScrollView>
-        <StackLayout class="home-panel2">
-         
+
+    	<ScrollView class="contents">
+        <StackLayout class="body">
             <StackLayout margin-top="20">
+              <Label text=" "/>
+              <Label text="View all details about the client." class="text-muted" />
+              <Label text=" "/>
 
-                <Label text="Name" class="profile-heading" />
-                <TextField text="{{ name }}" class="input" />
-
-                <Label text="Surname" class="profile-heading" />
-                <TextField text="{{ surname }}" class="input" />
-
-                <Label text="Email" class="profile-heading" />
-                <TextField text="{{ email }}" class="input" />
-
-                <Label text="Phone Number" class="profile-heading"
-                    keyboardType="number" />
-                <TextField text="{{ phoneNum }}" class="input" />
-
-                <Label text="Password" class="profile-heading" />
-                <TextField text="{{ pwd }}" secure="true" class="input" />
-
-                <Label text="Height (cm)" class="profile-heading" />
-                <TextField text="{{ height }}" secure="false" class="input" />
-                <Label text="Weight (kg)" class="profile-heading" />
-                <TextField text="{{ weight }}" secure="false" class="input" />
-                <Label text="Goal weight (kg)" class="profile-heading" />
-                <TextField text="{{ goal }}" secure="false" class="input" />
+              <Label text="Name" class="segmented-bar h3" />
+              <TextField text="{{ name }}" class="input" />
+              <Label text=" "/>
 
 
+              <Label text="Surname" class="segmented-bar h3" />
+              <TextField text="{{ surname }}" class="input" />
+              <Label text=" "/>
 
+              <Label text="Email" class="segmented-bar h3" />
+              <TextField text="{{ email }}" class="input" />
+              <Label text=" "/>
 
+              <Label text="Phone Number" class="segmented-bar h3"
+                  keyboardType="number" />
+              <TextField text="{{ phoneNum }}" class="input" />
+              <Label text=" "/>
+
+              <Label text="Password" class="segmented-bar h3" />
+              <TextField text="{{ pwd }}" secure="true" class="input" />
+              <Label text=" "/>
+
+              <Label text="Height (cm)" class="segmented-bar h3" />
+              <TextField text="{{ height }}" secure="false" class="input" />
+
+              <Label text=" "/>
+              <Label text="Weight (kg)" class="segmented-bar h3" />
+              <TextField text="{{ weight }}" secure="false" class="input" />
+              <Label text=" "/>
+
+              <Label text="Goal weight (kg)" class="segmented-bar h3" />
+              <TextField text="{{ goal }}" secure="false" class="input" />
+
+              <Label text=" "/>
             </StackLayout>
-          
         </StackLayout>
     </ScrollView>
 </Page>
