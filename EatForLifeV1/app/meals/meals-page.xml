@@ -1,16 +1,20 @@
 <Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
 
-  <ActionBar title="Meals" class="action-bar">
+  <ActionBar class="action-bar">
+    <Label class="action-bar-title h3" text="Edit Meal Plan"></Label>
+
   </ActionBar>
-  <ScrollView>
-    <StackLayout class="home-panel">
-      <Label text="Select the meal you want to change" class="l" />
-      <button class="MyMealActionButton" tap="breakfast" text="Breakfast"></button>
-      <button class="MyMealActionButton" tap="amsnack" text="Morning snack"></button>
-      <button class="MyMealActionButton" tap="lunch" text="Lunch"></button>
-      <button class="MyMealActionButton" tap="pmsnack" text="Afternoon  snack"></button>
-      <button class="MyMealActionButton" tap="dinner" text="Dinner"></button>
-    
+  <ScrollView class="contents">
+    <StackLayout class="body">
+      <Label text=" "/>
+      <Label text="Select the meal you want to change." class="text-muted" />
+      <Label text=" "/>
+      <button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="breakfast" text="Breakfast"></button>
+      <button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="amsnack" text="Morning snack"></button>
+      <button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="lunch" text="Lunch"></button>
+      <button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="pmsnack" text="Afternoon  snack"></button>
+      <button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="dinner" text="Dinner"></button>
+
     </StackLayout>
   </ScrollView>
 </Page>
