@@ -1,36 +1,39 @@
 <Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
 
-    <ActionBar title="Registered clients" class="action-bar">
+    <ActionBar class="action-bar">
       <ActionItem tap="onEdit" ios.systemIcon="2" android.systemIcon="ic_menu_add" ios.position="right"
       visibility="{{ isEditing ? 'collapse' : 'visible' }}"/>
-  <ActionItem tap="onSave" ios.systemIcon="4" android.systemIcon="ic_menu_save" ios.position="right"
+      <ActionItem tap="onSave" ios.systemIcon="4" android.systemIcon="ic_menu_save" ios.position="right"
       visibility="{{ isEditing ? 'visible' : 'collapse' }}"/>
-
+      <Label class="action-bar-title h3" text="Client List"></Label>
     </ActionBar>
-   
-        <StackLayout class="home-panel">
+
+    <ScrollView class="contents">
+      <StackLayout class="body">
+            <Label text=" "/>
             <GridLayout columns="20,100,100,100" rows="40, 40,40" width="2000"
-                height="60" class="MyMealLabel1">
+                height="60" class="h3">
                 <Label text="ID" row="0" col="1" />
                 <Label text="Name" row="0" col="2" />
                 <Label text="Surname" row="0" col="3" />
             </GridLayout>
             <ListView class="list-group" items="{{ countries }}" itemTap="{{ onItemTap }}"
-                style="height:1250px">             
+                style="height:1800px">
                 <ListView.itemTemplate>
                     <FlexboxLayout flexDirection="row" class="list-group-item">
-                        <GridLayout columns="100,100,100" rows="40, 40" width="2000"
+                        <GridLayout columns="20, 100,100,100" rows="40, 40, 40" width="2000"
                             height="60">
-                            <Label row="0" col="0" text="{{ id }}" class="list-group-item-heading"
+                            <Label row="0" col="1" text="{{ id }}" class="list-group-item-heading"
                                 verticalAlignment="center" style="width: 60%" />
-                            <Label row="0" col="1" text="{{ name }}" class="list-group-item-heading"
+                            <Label row="0" col="2" text="{{ name }}" class="list-group-item-heading"
                                 verticalAlignment="center" style="width: 60%" />
-                            <Label row="0" col="2" text="{{ surname }}" class="list-group-item-heading"
+                            <Label row="0" col="3" text="{{ surname }}" class="list-group-item-heading"
                                 verticalAlignment="center" style="width: 60%" />
                         </GridLayout>
                     </FlexboxLayout>
                 </ListView.itemTemplate>
             </ListView>
         </StackLayout>
+      </ScrollView>
 
 </Page>
