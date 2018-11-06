@@ -30,7 +30,7 @@ function send(args) {
         var logoPath = appPath + "/images/diet.pdf";
 
         email.compose({
-            subject: "EatForLife Diet plan",
+            subject: "EatForLife Shopping list",
             body: "This is your shopping list for your personal EatForLife diet plan. ",
             to: [emailaddress],
            attachments: [
