@@ -20,7 +20,7 @@ function ContactViewModel() {
                     var appPath = fs.knownFolders.currentApp().path;
 
              email.compose({
-                 subject: "EatForLife Contact Us",
+                 subject: "EatForLife Support",
                  body: mgs + " Kind regards: " + name + " " + surname,//+" "+ emailaddress ,
                  to: ['sydneytwigg@gmail.com'],
                  cc: [emailaddress],
