@@ -1,9 +1,16 @@
 const MealplanViewModel = require("./mealplan-view-model");
-
+var Sqlite = require("nativescript-sqlite");
 
 function onNavigatingTo(args) {
-    const page = args.object;
-    page.bindingContext = new MealplanViewModel();
+    var page = args.object;
+    var db_name = "eatforlife.sqlite";
+
+  if (!Sqlite.exists(db_name)) {
+    Sqlite.copyDatabase(db_name);
+  }
+    new Sqlite(db_name).then(db => {
+        page.bindingContext = MealplanViewModel(db);
+    });
 }
 function change(args) {
     const button = args.object;
@@ -11,17 +18,11 @@ function change(args) {
     page.frame.navigate("./changeDiet/changeDiet-page");
    
 }
-
-
-function onEdit(args) {
-    //console.log("Edit item tapped.");
-    //var btn = args.object;
-    //btn.bindingContext.set("isEditing", true);
+function changeItem(args) {
     const button = args.object;
     const page = button.page;
     page.frame.navigate("./meals/meals-page");
 }
-exports.onEdit = onEdit;
-
+exports.changeItem = changeItem;
 exports.change = change;
 exports.onNavigatingTo = onNavigatingTo;
