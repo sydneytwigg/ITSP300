@@ -1,24 +1,29 @@
 <Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
-	<ActionBar title="Diet prefrences" class="action-bar" />
-	<ScrollView>
-		<StackLayout class="MyStackLayout">
-			<Label text="The diet plan can be change according to your needs" class="l" />
-<Label text="" />
-			<GridLayout columns="300, 100" rows="40, 40, 40" width="500" height="120" >
-				<Label text="Wheat free" row="0" col="0" class="n" />				
-				<Switch checked="true" row="0" col="1"/>
+	<ActionBar title="Diet prefrences" class="action-bar">
+		<Label class="action-bar-title h3" text="Edit Diet Preferences"></Label>
+	</ActionBar>
 
-				<Label text="Lactose free" row="1" col="0" class="n" />
-				<Switch checked="true" row="1" col="1"/>
-				
+	  <ScrollView class="contents">
+	      <StackLayout class="body">
+	        <Label text=" "/>
+					<Label text="The diet plan can be change according to your needs" class="text-muted" />
+					<Label text="" />
 
-				<Label text="Vegetarian" row="2" col="0" class="n" />
-					<Switch checked="true" row="2" col="1" />
-			</GridLayout>
+					<GridLayout columns="200, 100" rows="40, 40, 40" width="300" height="120" >
+						<Label text="Wheat free" row="0" col="0" class="h5" />
+						<Switch checked="true" row="0" col="1" class="switch"/>
+
+						<Label text="Lactose free" row="1" col="0" class="h5" />
+						<Switch checked="true" row="1" col="1" class="switch"/>
+
+
+						<Label text="Vegetarian" row="2" col="0" class="h5" />
+						<Switch checked="true" row="2" col="1" class="switch"/>
+					</GridLayout>
 			<Label></Label>
 
-			<button class="MyMealActionButton" text="Save" tap="SaveChanges"></button>
-		
+			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" text="Save" tap="SaveChanges"></button>
+
 			<Label/>
 		</StackLayout>
 	</ScrollView>
