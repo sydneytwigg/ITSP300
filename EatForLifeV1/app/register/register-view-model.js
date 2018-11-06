@@ -13,41 +13,44 @@ function RegisterViewModel(db) {
     var emailVal = viewModel.get("email");
     var password = viewModel.get("password");
     var answer = viewModel.get("answer");
-    var confirmPassword = viewModel.get("ConfirmPassword password");
+     var confirmPassword = viewModel.get("ConfirmPassword password");
+     var name = viewModel.get("name");
+     var surname = viewModel.get("surname");
+     var height= viewModel.get("height");
+     var weight = viewModel.get("weight");
+     var goal = viewModel.get("goal");
+     var phone = viewModel.get("phone");
 
-    if (validator.validate(emailVal) == true) {
-        if (password != null) {
-            if (answer != null) {
-                
-            /*
-                db.execSQL("INSERT INTO client (Email, Password, Answer) VALUES (?, ?, ?)",[emailVal, password, answer]).then(id => {
-                alert("Account Created!");
+     if (name != null && surname != null && height != null && weight != null && goal != null && phone != null && password != null && confirmPassword!=null) {
+         if (validator.validate(emailVal) == true) {
+               
+             //    db.execSQL("INSERT INTO client (Email, Password, Answer) VALUES (?, ?, ?)",[emailVal, password, answer]).then(id => {
+             //    alert("Account Created!");
+ 
+             //    // Transition back to login
+ 
+             //    }, error => {
+             //    alert("INSERT ERROR", error);
+             //});
+             
 
-                // Transition back to login
+                //This is just to check that there is a db connection on the page
+                db.get("SELECT * FROM client").then(rows => {
+                    alert("Account Created!");
+                    topmost().goBack();
 
                 }, error => {
-                alert("INSERT ERROR", error);
-            });
-            */
+                    alert("SELECT ERROR", error);
+                });
 
-            //This is just to check that there is a db connection on the page
-            db.get("SELECT * FROM client").then(rows => {
-                alert("Account Created!");
-                topmost().goBack();
+         } else {
+             alert("Invalide email address");
+         }   
+     } else {
+         alert("Please complete all fields");
+     }
 
-            }, error => {
-                alert("SELECT ERROR", error);
-            });
 
-            } else {
-                alert("Please provide an answer for the question");
-            }
-        } else {
-            alert("Enter password");
-        }
-    } else {
-        alert("Enter valid email address");
-    }
  }
     return viewModel;
 }
