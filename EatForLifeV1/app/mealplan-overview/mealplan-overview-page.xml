@@ -14,12 +14,12 @@
 			<Label text=" "/>
 
 			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMealD1" text="Day 1">Day 1</button>
-			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMeal" text="Day 2">Day 2</button>
-			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMeal" text="Day 3">Day 3</button>
-			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMeal" text="Day 4">Day 4</button>
-			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMeal" text="Day 5">Day 5</button>
-			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMeal" text="Day 6">Day 6</button>
-			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMeal" text="Day 7">Day 7</button>
+			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMealD2" text="Day 2">Day 2</button>
+			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMealD3" text="Day 3">Day 3</button>
+			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMealD4" text="Day 4">Day 4</button>
+			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMealD5" text="Day 5">Day 5</button>
+			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMealD6" text="Day 6">Day 6</button>
+			<button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnViewMealD7" text="Day 7">Day 7</button>
 
       <!--  <button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="btnPrint" text="Save diet">Mail me</button>
       <button class="btn btn-primary btn-rounded-lg btn-layout-mp" tap="send" text="Mail diet"></button>-->
