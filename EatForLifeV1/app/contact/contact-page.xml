@@ -14,7 +14,7 @@
         <Label text="Surname" class="label" textWrap="true"></Label>
         <TextField id="contactSurname" hint="Surname" text="{{ contactSurname }}" class="input input-border" autocorrect="false"></TextField>
       </StackLayout>
-     
+
         <StackLayout class="input-field">
             <Label text="Email" class="label" textWrap="true"></Label>
             <TextField id="contactEmail" hint="Email" text="{{ contactEmail }}" class="input input-border" autocorrect="false"></TextField>

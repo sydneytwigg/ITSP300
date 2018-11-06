@@ -17,6 +17,7 @@
   "dependencies": {
     "email-validator": "^2.0.4",
     "nativescript-chatview": "^1.0.3",
+    "nativescript-checkbox": "^3.0.3",
     "nativescript-email": "1.5.3",
     "nativescript-sqlite": "^2.2.3",
     "nativescript-theme-core": "~1.0.4",

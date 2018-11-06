@@ -4,6 +4,7 @@ var validator = require("email-validator");
 let getFrameById = require("tns-core-modules/ui/frame").getFrameById;
 var LoginPage = require("./login-page");
 var applicationSettingsModule = require("application-settings");
+const topmost = require("tns-core-modules/ui/frame").topmost;
 
 function LoginViewModel(db) {
     var viewModel = new Observable();
@@ -12,7 +13,7 @@ function LoginViewModel(db) {
     applicationSettingsModule.getString("EFL-ID","");
     applicationSettingsModule.getString("EFL-mealPlan","");
     applicationSettingsModule.getString("EFL-overview","");
-    
+
 
   viewModel.LoginValidate = function (args) {
 
@@ -21,8 +22,8 @@ function LoginViewModel(db) {
 
 
     if (validator.validate(emailVal) == true) {
-        if (password != null) {          
-            
+        if (password != null) {
+
 			db.get("SELECT * FROM client WHERE Email = ? AND Password = ?",[emailVal, password]).then(rows => {
                 if (rows != null) {
                     alert("Login Successful");
@@ -33,8 +34,7 @@ function LoginViewModel(db) {
                     applicationSettingsModule.setString("EFL-ID",rows[0]);
               //      applicationSettingsModule.setString("EFL-mealPlan",rows[2]);
                     applicationSettingsModule.setString("EFL-overview",rows[5]);
-                    
-                    page.frame.navigate("./mealplan-overview/mealplan-overview-page");
+                    topmost().navigate({ moduleName: applicationSettingsModule.getString("EFL-login")});
                 }else{
                     alert("Incorrect Email or Password!");
                 }

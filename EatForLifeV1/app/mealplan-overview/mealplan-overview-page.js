@@ -1,4 +1,6 @@
 const MealplanOverviewViewModel = require("./mealplan-overview-view-model");
+var applicationSettingsModule = require("application-settings");
+const topmost = require("tns-core-modules/ui/frame").topmost;
 
 var frameModule = require("ui/frame");
 
@@ -7,9 +9,14 @@ var mealplanViewModel = new MealplanOverviewViewModel();
 function pageLoaded(args) {
 
   var page = args.object;
-
-
+  applicationSettingsModule.setString("EFL-login","");
+  var login = applicationSettingsModule.getString("EFL-user");
+if(login != null){
   page.bindingContext = mealplanViewModel;
+}else{
+  applicationSettingsModule.setString("EFL-login","./mealplan-dayview/mealplan-page");
+  topmost().navigate({ moduleName: "./login/login-page"});
+}
 }
 
 function btnViewMeal(args){
@@ -39,7 +46,7 @@ function send(args) {
     const button = args.object;
     const page = button.page;
     page.frame.navigate("./send/send-page")
- 
+
 }
 
 
