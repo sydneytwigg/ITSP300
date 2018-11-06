@@ -26,9 +26,7 @@ function btnViewMeal(args){
 }
 
 function btnPrint(args) {
-    const button = args.object;
-    const page = button.page;
-    page.frame.navigate("./print/print-page")
+   alert("Downloaded");
 }
 
 function btnLogin(args) {
