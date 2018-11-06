@@ -11,11 +11,11 @@
       <Label text=" "/>
       <Label text="Three items can be selected for the morning snack" class="text-muted" />
       <Label text=" "/>
-      <Label text="Select first item:" class="l" />
+      <Label text="Select first item:" class="segmented-bar h3" />
       <ListPicker items="{{ listPicker1 }}" selectedIndex="{{ selectedListPickerIndex }}" />
-      <Label text="Select first item:" class="l" />
+      <Label text="Select first item:" class="segmented-bar h3" />
       <ListPicker items="{{ listPicker2 }}" selectedIndex="{{ selectedListPickerIndex2 }}" />
-      <Label text="Select third item:" class="l" />
+      <Label text="Select third item:" class="segmented-bar h3" />
       <ListPicker items="{{ listPicker3 }}" selectedIndex="{{ selectedListPickerIndex3 }}" />
     </StackLayout>
       </ScrollView>
