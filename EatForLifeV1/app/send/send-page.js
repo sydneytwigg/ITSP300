@@ -50,7 +50,7 @@ function send(args) {
         console.log("email: " + emailaddress);
   
     } else {
-        alert("Emial address not valid");
+        alert("Email address not valid");
     } 
 
     
