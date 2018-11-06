@@ -23,6 +23,7 @@ function changeItem(args) {
     const page = button.page;
     page.frame.navigate("./meals/meals-page");
 }
+
 exports.changeItem = changeItem;
 exports.change = change;
 exports.onNavigatingTo = onNavigatingTo;
