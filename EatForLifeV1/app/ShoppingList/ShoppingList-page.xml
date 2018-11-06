@@ -14,12 +14,12 @@
           <Label text="Measurement" row="0" col="2" />
         </GridLayout>
 
-        <ListView class="list-group" items="{{ countries }}" itemTap="{{ onItemTap }}" style="height: 1800px">
+        <ListView class="list-group" items="{{ items }}" itemTap="{{ onItemTap }}" style="height: 1800px">
           <ListView.itemTemplate>
               <FlexboxLayout flexDirection="row" class="list-group-item">
                   <GridLayout columns="5,200,110,50" rows="40, 40,40" width="2000" height="60" class="MyMealLabel1">
                       <Label text="{{ name }}" class="list-group-item-heading" verticalAlignment="center" style="width: 60%" row="0" col="1" />
-                      <Label text="{{  measurment }}" class="list-group-item-heading" verticalAlignment="center" style="width: 60%" row="0" col="2" />
+                      <Label text="{{  measurement }}" class="list-group-item-heading" verticalAlignment="center" style="width: 60%" row="0" col="2" />
                     <CheckBox:CheckBox text="" checked="false"  row="0" col="3" />
                   </GridLayout>
               </FlexboxLayout>
