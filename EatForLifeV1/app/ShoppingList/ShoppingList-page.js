@@ -1,10 +1,10 @@
 var frameModule = require("tns-core-modules/ui/frame");
-var ShoppinglistViewModel = require("./shoppinglist-view-model");
+var ShoppinglistViewModel = require("./ShoppingList-view-model");
 
 var shoppinglistViewModel = new ShoppinglistViewModel();
 
 function pageLoaded(args) {
- 
+
   var page = args.object;
 
     page.bindingContext = shoppinglistViewModel;
