@@ -1,7 +1,7 @@
 <Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
 
     <ActionBar class="action-bar">
-      <ActionItem tap="onEdit" ios.systemIcon="2" android.systemIcon="ic_menu_add" ios.position="right"
+      <ActionItem tap="onAdd" ios.systemIcon="2" android.systemIcon="ic_menu_add" ios.position="right"
       visibility="{{ isEditing ? 'collapse' : 'visible' }}"/>
       <ActionItem tap="onSave" ios.systemIcon="4" android.systemIcon="ic_menu_save" ios.position="right"
       visibility="{{ isEditing ? 'visible' : 'collapse' }}"/>
