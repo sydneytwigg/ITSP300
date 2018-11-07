@@ -17,9 +17,9 @@ function BreakfastViewModel(db) {
 
     db.all("SELECT Description FROM item").then(rows => {
         rows.forEach((w) => {
-            viewModel.listPicker1.push({w[0]});
-            viewModel.listPicker2.push({w[0]});
-            viewModel.listPicker3.push({w[0]});
+            viewModel.listPicker1.push(w[0]);
+            viewModel.listPicker2.push(w[0]);
+            viewModel.listPicker3.push(w[0]);
 
             });
 
@@ -41,10 +41,31 @@ function BreakfastViewModel(db) {
     var pick2 = viewModel.get("selectedListPickerIndex2");
     var pick3 = viewModel.get("selectedListPickerIndex3");
 
-        db.execSQL("UPDATE list SET idItem1 = ?, idItem2 = ?, idItem3 = ? WHERE idList = ?",[pick1,pick2,pick3,listID]).then(id => {
+    db.all("SELECT idItem from item WHERE Description = ? OR Description = ? OR Description = ?",[pick1,pick2,pick3]).then(rows => {
+
+                var item1 = rows[0,0];
+                var item2 = rows[0,1];
+                var item3 = rows[0,2];
+
+
+
+
+    /*    var number = 1;
+            rows.forEach((w) => {
+             var item = w[1];
+
+
+            });
+*/
+
+        db.execSQL("UPDATE list SET idItem1 = ?, idItem2 = ?, idItem3 = ? WHERE idList = ?",[item1,item2,item3,itemID]).then(id => {
 
             alert("Update Successful");
             topmost().navigate({ moduleName: "./mealplan-dayview/mealplan-page"});
+        
+        },error => {
+        alert("SELECT ERROR"+error);
+    });
 
     },error => {
         alert("SAVE ERROR"+error);
