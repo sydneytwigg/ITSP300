@@ -3,7 +3,7 @@
   <ActionBar title="Change breakfast" class="action-bar">
     <ActionItem
     ios.systemIcon="3" ios.position="left"
-    android.systemIcon="ic_menu_save" android.position="actionBar" tap="saveChanges"></ActionItem>
+    android.systemIcon="ic_menu_save" android.position="actionBar" tap="{{ saveChanges }}"></ActionItem>
   </ActionBar>
   <ScrollView>
     <StackLayout class="home-panel">
@@ -14,8 +14,6 @@
       <ListPicker items="{{ listPicker2 }}" selectedIndex="{{ selectedListPickerIndex2 }}" />
       <Label text="Select third item:" class="l" />
       <ListPicker items="{{ listPicker3 }}" selectedIndex="{{ selectedListPickerIndex3 }}" />
-      <Label text="Select fourth item:" class="l" />
-      <ListPicker items="{{ listPicker4 }}" selectedIndex="{{ selectedListPickerIndex4 }}" />
   
     </StackLayout>
 
