@@ -13,7 +13,7 @@ function BreakfastViewModel(db) {
     viewModel.listPicker4 = [];
 
 
-    var listID applicationSettingsModule.getString("EFL-LISTID");
+    var listID = applicationSettingsModule.getString("EFL-LISTID");
 
     db.all("SELECT Description FROM item").then(rows => {
         rows.forEach((w) => {
