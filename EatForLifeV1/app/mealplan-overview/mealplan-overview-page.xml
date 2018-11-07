@@ -4,7 +4,7 @@
 		<Label class="action-bar-title h3" text="Meal Plan"></Label>
     <ActionItem  tap="send" ios.systemIcon="1" android.systemIcon="ic_menu_share"
             ios.position="right" visibility="{{ isEditing ? 'collapse' : 'visible' }}" />
-    <ActionItem ios.systemIcon="3" android.systemIcon="ic_menu_save"  tap="btnPrint"></ActionItem>
+   
 
   </ActionBar>
 	<ScrollView class="contents">
