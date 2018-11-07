@@ -3,7 +3,7 @@
     <ActionBar title="Shopping list" class="action-bar">
         <ActionItem tap="onEdit" ios.systemIcon="1" android.systemIcon="ic_menu_share"
             ios.position="right" visibility="{{ isEditing ? 'collapse' : 'visible' }}" />
-       
+           <ActionItem ios.systemIcon="3" android.systemIcon="ic_menu_save"  tap="btnPrint"></ActionItem>	
 
     </ActionBar>
 
@@ -16,7 +16,7 @@
           </GridLayout>
             <ListView class="list-group" items="{{ countries }}" itemTap="{{ onItemTap }}"
                 style="height:1250px">
-             
+
                 <ListView.itemTemplate>
                     <FlexboxLayout flexDirection="row" class="list-group-item">
                         <GridLayout columns="0,200,150" rows="40, 40,40" width="2000"
@@ -33,5 +33,5 @@
             </ListView>
 
         </StackLayout>
-    
+
 </Page>
