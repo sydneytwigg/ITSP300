@@ -15,11 +15,11 @@ function BreakfastViewModel(db) {
 
     var listID = applicationSettingsModule.getString("EFL-LISTID");
 
-    db.each("SELECT Description FROM item").then(rows => {
+    db.all("SELECT Description FROM item").then(rows => {
         rows.forEach((w) => {
-            viewModel.listPicker1.push(w[0]);
-            viewModel.listPicker2.push(w[0]);
-            viewModel.listPicker3.push(w[0]);
+            viewModel.listPicker1.push(w.Description);
+            viewModel.listPicker2.push(w.Description);
+            viewModel.listPicker3.push(w.Description);
 
             });
 
@@ -42,10 +42,6 @@ function BreakfastViewModel(db) {
     var pick3 = viewModel.get("selectedListPickerIndex3");
 
     db.all("SELECT idItem from item WHERE Description = ? OR Description = ? OR Description = ?",[pick1,pick2,pick3]).then(rows => {
-
-                var item1 = rows[0,0];
-                var item2 = rows[0,1];
-                var item3 = rows[0,2];
 
 
 
