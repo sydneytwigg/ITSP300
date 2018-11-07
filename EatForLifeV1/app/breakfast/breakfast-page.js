@@ -1,16 +1,20 @@
 var frameModule = require("ui/frame");
 var BreakfastViewModel = require("./breakfast-view-model");
+var Sqlite = require("nativescript-sqlite");
 
-var breakfastViewModel = new BreakfastViewModel();
 
 function pageLoaded(args) {
 
     var page = args.object;
 
-    page.bindingContext = breakfastViewModel;
+    var db_name = "eatforlife.sqlite";
+
+  if (!Sqlite.exists(db_name)) {
+    Sqlite.copyDatabase(db_name);
+  }
+    new Sqlite(db_name).then(db => {
+        page.bindingContext = BreakfastViewModel(db);
+    });
 }
-function saveChanges(args) {
-    alert("Saved");
-}
-exports.saveChanges = saveChanges;
+
 exports.pageLoaded = pageLoaded;
