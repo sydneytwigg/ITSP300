@@ -1,6 +1,6 @@
 var observableModule = require("tns-core-modules/data/observable");
 
-function HomeViewModel() {
+function AddadminViewModel() {
   var viewModel = observableModule.fromObject({
 
   });
@@ -8,4 +8,4 @@ function HomeViewModel() {
   return viewModel;
 }
 
-module.exports = HomeViewModel;
+module.exports = AddadminViewModel;
