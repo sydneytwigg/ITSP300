@@ -1,20 +1,24 @@
 <Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
 
-  <ActionBar title="Change breakfast" class="action-bar">
+  <ActionBar class="action-bar">
     <ActionItem
     ios.systemIcon="3" ios.position="left"
     android.systemIcon="ic_menu_save" android.position="actionBar" tap="{{ saveChanges }}"></ActionItem>
+    <Label class="action-bar-title h3" text="Change Breakfast"></Label>
   </ActionBar>
-  <ScrollView>
-    <StackLayout class="home-panel">
-      <Label text="Four items can be selected for breakfast" class="l" />
-      <Label text="Select first item:" class="l" />
+  <ScrollView class="contents">
+    <StackLayout class="body">
+      <Label text=" "/>
+      <Label text="Three items can be selected for the" class="text-muted" />
+      <Label text="breakfast" class="text-muted" />
+      <Label text=" "/>
+      <Label text="Select first item:" class="segmented-bar h3" />
       <ListPicker items="{{ listPicker1 }}" selectedIndex="{{ selectedListPickerIndex }}" />
-      <Label text="Select first item:" class="l" />
+      <Label text="Select first item:" class="segmented-bar h3" />
       <ListPicker items="{{ listPicker2 }}" selectedIndex="{{ selectedListPickerIndex2 }}" />
-      <Label text="Select third item:" class="l" />
+      <Label text="Select third item:" class="segmented-bar h3" />
       <ListPicker items="{{ listPicker3 }}" selectedIndex="{{ selectedListPickerIndex3 }}" />
-  
+
     </StackLayout>
 
   </ScrollView>

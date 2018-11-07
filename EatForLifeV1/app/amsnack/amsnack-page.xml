@@ -4,12 +4,12 @@
     <ActionItem ios.systemIcon="3" ios.position="left"
      android.systemIcon="ic_menu_save" android.position="actionBar" tap="saveChanges"></ActionItem>
      <Label class="action-bar-title h3" text="Change Morning Snack"></Label>
-
   </ActionBar>
   <ScrollView class="contents">
     <StackLayout class="body">
       <Label text=" "/>
-      <Label text="Three items can be selected for the morning snack" class="text-muted" />
+      <Label text="Three items can be selected for the" class="text-muted" />
+      <Label text="morning snack" class="text-muted" />
       <Label text=" "/>
       <Label text="Select first item:" class="segmented-bar h3" />
       <ListPicker items="{{ listPicker1 }}" selectedIndex="{{ selectedListPickerIndex }}" />
