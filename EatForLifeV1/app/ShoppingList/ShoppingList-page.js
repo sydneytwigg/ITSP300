@@ -27,6 +27,13 @@ function onEdit(args) {
     const page = button.page;
     page.frame.navigate("./shareshoppinglist/shareshoppinglist-page");
 }
-exports.onEdit = onEdit;
 
+function btnPrint(args) {
+   // const button = args.object;
+    //const page = button.page;
+   // page.frame.navigate("./print/print-page")
+  alert("downloaded");
+}
+exports.onEdit = onEdit;
+exports.btnPrint = btnPrint;
 exports.pageLoaded = pageLoaded;
