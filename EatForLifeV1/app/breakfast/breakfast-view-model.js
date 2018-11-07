@@ -17,9 +17,9 @@ function BreakfastViewModel(db) {
 
     db.all("SELECT Description FROM item").then(rows => {
         rows.forEach((w) => {
-            viewModel.listPicker1.push(w.Description);
-            viewModel.listPicker2.push(w.Description);
-            viewModel.listPicker3.push(w.Description);
+            viewModel.listPicker1.push(w[0]);
+            viewModel.listPicker2.push(w[0]);
+            viewModel.listPicker3.push(w[0]);
 
             });
 
