@@ -14,6 +14,7 @@ function MealplanViewModel(db) {
 if(setDay == "Day1"){
     db.get("SELECT Day1 FROM meal_plan_days WHERE idMPDays = ?",[iDays]).then(columns => {
        var numDay1 = columns[0]
+        applicationSettingsModule.setString("EFL-LISTID",numDay1);
         db.execSQL("delete from itemList").then(id => {
             db.execSQL("INSERT INTO itemList (idItem) VALUES ((SELECT idItem1 from list where idList = ? )), ((SELECT idItem2 from list where idList = ? )), ((SELECT idItem3 from list where idList = ? )), ((SELECT idItem4 from list where idList = ? )), ((SELECT idItem5 from list where idList = ? )), ((SELECT idItem6 from list where idList = ? )), ((SELECT idItem7 from list where idList = ? )), ((SELECT idItem8 from list where idList = ? )), ((SELECT idItem9 from list where idList = ? )), ((SELECT idItem10 from list where idList = ? )), ((SELECT idItem11 from list where idList = ? )), ((SELECT idItem12 from list where idList = ? )), ((SELECT idItem13 from list where idList = ? )), ((SELECT idItem14 from list where idList = ? )), ((SELECT idItem15 from list where idList = ? )), ((SELECT idItem16 from list where idList = ? )), ((SELECT idItem17 from list where idList = ? )), ((SELECT idItem18 from list where idList = ? ))",[numDay1, numDay1, numDay1, numDay1, numDay1, numDay1, numDay1, numDay1, numDay1, numDay1, numDay1, numDay1, numDay1, numDay1, numDay1, numDay1, numDay1, numDay1]).then(id => {
 
