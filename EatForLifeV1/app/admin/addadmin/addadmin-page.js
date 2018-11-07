@@ -9,5 +9,8 @@ function pageLoaded(args) {
 
   page.bindingContext = addadminViewModel;
 }
-
+function onAdd(){
+alert("Admin added");
+}
 exports.pageLoaded = pageLoaded;
+exports.onAdd=onAdd;
