@@ -1,17 +1,21 @@
 var frameModule = require("ui/frame");
 var AmsnackViewModel = require("./amsnack-view-model");
-
-var AmsnackViewModel = new AmsnackViewModel();
+var Sqlite = require("nativescript-sqlite");
 
 function pageLoaded(args) {
 
     var page = args.object;
 
-    page.bindingContext = AmsnackViewModel;
+
+    var db_name = "eatforlife.sqlite";
+
+    if (!Sqlite.exists(db_name)) {
+        Sqlite.copyDatabase(db_name);
+    }
+    new Sqlite(db_name).then(db => {
+        page.bindingContext = AmsnackViewModel(db);
+    });
 }
 
-function saveChanges(args) {
-    alert("Saved");
-}
-exports.saveChanges = saveChanges;
+
 exports.pageLoaded = pageLoaded;

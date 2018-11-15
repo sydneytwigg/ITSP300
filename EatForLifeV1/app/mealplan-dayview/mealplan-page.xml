@@ -1,7 +1,7 @@
 <Page loaded="onNavigatingTo" class="page" xmlns="http://www.nativescript.org/tns.xsd"  xmlns:CheckBox="nativescript-checkbox" >
   <ActionBar  class="action-bar">
     <Label class="action-bar-title h3" text="Meal Plan"></Label>
-    <ActionItem tap="onEdit" ios.systemIcon="2" android.systemIcon="ic_menu_edit" ios.position="right"
+    <ActionItem tap="changeItem" ios.systemIcon="2" android.systemIcon="ic_menu_edit" ios.position="right"
 visibility="{{ isEditing ? 'collapse' : 'visible' }}"/>
   </ActionBar>
 

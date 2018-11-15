@@ -14,7 +14,7 @@
       <Label text=" "/>
       <Label text="Select first item:" class="segmented-bar h3" />
       <ListPicker items="{{ listPicker1 }}" selectedIndex="{{ selectedListPickerIndex }}" />
-      <Label text="Select first item:" class="segmented-bar h3" />
+      <Label text="Select second item:" class="segmented-bar h3" />
       <ListPicker items="{{ listPicker2 }}" selectedIndex="{{ selectedListPickerIndex2 }}" />
       <Label text="Select third item:" class="segmented-bar h3" />
       <ListPicker items="{{ listPicker3 }}" selectedIndex="{{ selectedListPickerIndex3 }}" />

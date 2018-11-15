@@ -2,7 +2,7 @@
 
   <ActionBar class="action-bar">
     <ActionItem ios.systemIcon="3" ios.position="left"
-    android.systemIcon="ic_menu_save" android.position="actionBar" tap="saveChanges"></ActionItem>
+    android.systemIcon="ic_menu_save" android.position="actionBar" tap="{{ saveChanges }}"></ActionItem>
     <Label class="action-bar-title h3" text="Change Lunch"></Label>
   </ActionBar>
   <ScrollView class="contents">
